@@ -1,0 +1,14 @@
+{
+  "name": "glent-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site-pitch demo for Glent Group — new one-page site, framed original, and the offer.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

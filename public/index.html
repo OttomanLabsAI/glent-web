@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" style="--pitch-accent:#f26a1b">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Glent Group — Self-delivered CSA packages for Data Centres &amp; Pharma across Europe</title>
+<meta name="description" content="Glent Group self-deliver CSA packages — groundworks, reinforced concrete, underground services and hard landscaping — for Data Centre and Pharmaceutical projects across mainland Europe. Operating since 2017, six European offices.">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+:root{
+  --bg:#141619;
+  --ink:#eef0ec;
+  --muted:#a7adaa;
+  --accent:#f26a1b;
+  --panel:#1d2024;
+  --panel-2:#22262b;
+  --line:rgba(255,255,255,.14);
+  --display:"Oswald",Impact,"Arial Narrow",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:1.04;
+  letter-spacing:.01em;margin:0 0 .4em;max-width:none;hyphens:none;overflow-wrap:normal}
+h1{font-size:clamp(3.4rem,17vw,8.5rem);font-weight:700;letter-spacing:.02em}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem);font-weight:700}
+h3{font-size:clamp(1.15rem,3vw,1.45rem);font-weight:500}
+p{max-width:65ch;margin:0 0 1em}
+a{color:var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible+label{outline:2px solid var(--accent);outline-offset:3px}
+section{padding:64px 20px}
+.wrap{max-width:1120px;margin:0 auto}
+.kicker{font:700 12px/1.4 var(--mono);letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--accent);flex:none}
+.btn{display:inline-block;background:var(--accent);color:#141619;font:700 15px/1 var(--body);
+  text-transform:uppercase;letter-spacing:.06em;padding:16px 28px;text-decoration:none}
+.btn:hover{background:#ff7c30}
+.link-plain{color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.link-plain:hover{color:var(--ink)}
+.code{font-family:var(--mono);color:var(--accent);font-weight:700;letter-spacing:.04em}
+.chip{display:inline-block;font:700 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:#141619;background:#d7a12d;padding:4px 6px;border-radius:2px;vertical-align:2px}
+
+/* hero */
+.hero{padding:76px 20px 64px;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;gap:44px;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));align-items:end}
+.hero .sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--ink);max-width:34ch;margin:14px 0 30px}
+.hero .sub strong{color:var(--accent)}
+.actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+
+/* flagship spec card */
+.spec{background:var(--panel);border:1px solid var(--line);position:relative;padding:26px 24px 22px}
+.spec .tag{position:absolute;top:0;right:0;background:#0c0d0f;color:#fff;
+  font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px}
+.spec dl{display:grid;grid-template-columns:auto 1fr;gap:9px 18px;margin:16px 0 0;font-size:14.5px}
+.spec dt{font:700 11px/1.7 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.spec dd{margin:0}
+.spec .big{font:700 clamp(1.9rem,4vw,2.5rem)/1.05 var(--display);color:var(--accent)}
+
+/* facts strip */
+.facts{padding:0;border-bottom:1px solid var(--line)}
+.facts .wrap{max-width:none;display:grid;gap:1px;background:var(--line);
+  grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))}
+.facts div{background:var(--panel);padding:22px 24px}
+.facts b{display:block;font:700 clamp(1.35rem,3vw,1.7rem)/1.15 var(--display);
+  text-transform:uppercase;letter-spacing:.02em}
+.facts span{font:600 11px/1.6 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* packages — radio tabs */
+.pkg-radios{position:absolute;opacity:0;pointer-events:none}
+.tabbar{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;border-bottom:1px solid var(--line)}
+.tabbar label{cursor:pointer;padding:13px 16px 11px;font:600 13px/1 var(--body);
+  letter-spacing:.05em;text-transform:uppercase;color:var(--muted);
+  border-bottom:3px solid transparent;margin-bottom:-1px}
+.tabbar label .code{color:inherit;margin-right:8px;font-size:11px}
+.tabbar label:hover{color:var(--ink)}
+#pkg1:checked~.tabbar label[for="pkg1"],
+#pkg2:checked~.tabbar label[for="pkg2"],
+#pkg3:checked~.tabbar label[for="pkg3"],
+#pkg4:checked~.tabbar label[for="pkg4"]{color:var(--ink);border-bottom-color:var(--accent)}
+#pkg1:checked~.tabbar label[for="pkg1"] .code,
+#pkg2:checked~.tabbar label[for="pkg2"] .code,
+#pkg3:checked~.tabbar label[for="pkg3"] .code,
+#pkg4:checked~.tabbar label[for="pkg4"] .code{color:var(--accent)}
+.panel{display:none;padding:34px 0 8px}
+#pkg1:checked~#panel1,#pkg2:checked~#panel2,
+#pkg3:checked~#panel3,#pkg4:checked~#panel4{display:block}
+.panel .pkg-head{display:none}
+.panel p.lede{color:var(--muted);max-width:60ch}
+.scope{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px 28px;
+  grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+.scope li{padding:10px 0 10px 20px;border-bottom:1px solid var(--line);position:relative;font-size:15px}
+.scope li::before{content:"";position:absolute;left:0;top:18px;width:9px;height:2px;background:var(--accent)}
+@media (max-width:599px){
+  .tabbar{display:none}
+  .panel{display:block;padding:26px 0 4px}
+  .panel .pkg-head{display:block;margin-top:14px}
+}
+
+/* delivery cards */
+.band{background:var(--panel)}
+.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));margin-top:28px}
+.card{background:var(--panel-2);border:1px solid var(--line);padding:24px 22px;position:relative}
+.card .tag{position:absolute;top:0;right:0;background:#0c0d0f;color:#fff;
+  font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px}
+.card p{font-size:15px;color:var(--muted);margin-bottom:0}
+
+/* project register */
+.register{margin:30px 0 0;border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:230px 1fr 230px;gap:8px 24px;
+  padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.row .code{font-size:13.5px}
+.row .client{font-weight:600}
+.row .loc{font-size:13px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;text-align:right}
+.row.head{font:700 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);border-bottom:1px solid var(--ink);padding:10px 0}
+.row.head .loc{font:inherit;color:inherit}
+@media (max-width:699px){
+  .row{grid-template-columns:1fr;gap:2px;padding:14px 0}
+  .row .loc{text-align:left}
+  .row.head{display:none}
+}
+.clients-line{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);
+  font-size:15px;color:var(--muted)}
+.clients-line strong{color:var(--ink)}
+
+/* offices */
+.office h3{margin-bottom:6px}
+.office .entity{font:700 11px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.office address{font-style:normal;font-size:14.5px;color:var(--muted);margin:10px 0 12px;line-height:1.55}
+.office a.tel{font-weight:600;text-decoration:none;font-size:15px}
+.office a.tel:hover{text-decoration:underline}
+
+/* footer */
+footer{padding:44px 20px 56px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:18px 34px;align-items:baseline;justify-content:space-between}
+.wordmark{font:700 1.5rem/1 var(--display);text-transform:uppercase;letter-spacing:.05em}
+footer p{margin:0;font-size:13.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<style id="pitch-bar-css">
+  #pitch-bar{position:fixed;top:0;left:0;right:0;z-index:2147483000;
+    box-sizing:border-box;display:flex;align-items:center;gap:6px;height:48px;
+    padding:0 12px;background:#0c0c0c;color:#eee;
+    font:600 13px/1 system-ui,-apple-system,"Segoe UI",sans-serif;
+    border-bottom:2px solid var(--pitch-accent,#e8b33a)}
+  #pitch-bar *{box-sizing:border-box;margin:0}
+  #pitch-bar .pitch-chip{background:var(--pitch-accent,#e8b33a);color:#0c0c0c;
+    font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+    padding:4px 7px;border-radius:3px;margin-right:6px;flex:none}
+  #pitch-bar a{color:#bdbdbd;text-decoration:none;padding:16px 10px 14px;
+    white-space:nowrap;border-bottom:3px solid transparent}
+  #pitch-bar a:hover{color:#fff}
+  #pitch-bar a[aria-current="page"]{color:#fff;
+    border-bottom-color:var(--pitch-accent,#e8b33a)}
+  body{padding-top:48px !important}
+  @media (max-width:479px){
+    #pitch-bar{padding:0 6px;gap:2px}
+    #pitch-bar a{padding:16px 7px 14px;font-size:12px}
+    #pitch-bar .pitch-chip{margin-right:2px}
+  }
+</style>
+<nav id="pitch-bar" aria-label="Demo pages">
+  <span class="pitch-chip">Demo</span>
+  <a href="/" aria-current="page">New site</a>
+  <a href="/original/">Current site</a>
+  <a href="/offer/">The offer</a>
+</nav>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">CSA Contractor — Mainland Europe</p>
+      <h1 data-one-line>Glent</h1>
+      <p class="sub">Self-delivered CSA packages for <strong>Data Centre</strong> and <strong>Pharmaceutical</strong> projects — groundworks, reinforced concrete, underground services and hard landscaping, since 2017.</p>
+      <div class="actions">
+        <a class="btn" href="#offices">Discuss a project</a>
+        <a class="link-plain" href="#register">See the project register</a>
+      </div>
+    </div>
+    <div class="spec">
+      <span class="tag">Largest package to date</span>
+      <p class="kicker" style="margin-bottom:6px">FRA01 · Frankfurt</p>
+      <div class="big">€43m</div>
+      <dl>
+        <dt>Client</dt><dd>Winthrop Technologies</dd>
+        <dt>Industry</dt><dd>Data Centre — 18,000&nbsp;m² building, three data centre modules plus front of house</dd>
+        <dt>Scope</dt><dd>Basement raft slab c.&thinsp;7&nbsp;m below ground, concrete frame for the entire structure, all underground services and hard landscaping across the 39,000&nbsp;m² site</dd>
+      </dl>
+    </div>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div><span>Operating since</span><b>2017</b></div>
+    <div><span>European offices</span><b>Six countries</b></div>
+    <div><span>Largest package</span><b>€43 million</b></div>
+    <div><span>Management systems</span><b>ISO 9001 · 14001 · 45001</b></div>
+  </div>
+</div>
+
+<section id="packages">
+  <div class="wrap" style="position:relative">
+    <p class="kicker">The packages</p>
+    <h2>What we self-deliver</h2>
+    <p style="color:var(--muted)">Four packages, one contractor — engineered, set out and built by Glent teams with Glent plant.</p>
+
+    <input class="pkg-radios" type="radio" name="pkg" id="pkg1" checked>
+    <input class="pkg-radios" type="radio" name="pkg" id="pkg2">
+    <input class="pkg-radios" type="radio" name="pkg" id="pkg3">
+    <input class="pkg-radios" type="radio" name="pkg" id="pkg4">
+
+    <div class="tabbar" role="tablist" aria-label="Packages">
+      <label for="pkg1"><span class="code">PKG&nbsp;01</span>Engineering</label>
+      <label for="pkg2"><span class="code">PKG&nbsp;02</span>Groundworks</label>
+      <label for="pkg3"><span class="code">PKG&nbsp;03</span>Reinforced Concrete</label>
+      <label for="pkg4"><span class="code">PKG&nbsp;04</span>Hard Landscaping</label>
+    </div>
+
+    <div class="panel" id="panel1">
+      <h3 class="pkg-head"><span class="code">PKG 01</span> — Engineering Services</h3>
+      <p class="lede">The package starts on the model, not the ground — planning, co-ordination and technical submittals carried from Stage&nbsp;4 to Stage&nbsp;5.</p>
+      <ul class="scope">
+        <li>Preconstruction modelling and planning</li>
+        <li>Logistic plans</li>
+        <li>Stage 4 to Stage 5 technical submittals</li>
+        <li>Underground services co-ordination</li>
+        <li>BIM modelling</li>
+        <li>Temporary works designs</li>
+        <li>Waterproofing detailing</li>
+      </ul>
+    </div>
+
+    <div class="panel" id="panel2">
+      <h3 class="pkg-head"><span class="code">PKG 02</span> — Groundworks &amp; Underground Services</h3>
+      <p class="lede">From bulk dig to drainage — the below-ground package delivered as one scope.</p>
+      <ul class="scope">
+        <li>Bulk excavation</li>
+        <li>Shoring systems</li>
+        <li>Contaminated ground disposal</li>
+        <li>Contaminated ground remediation</li>
+        <li>Enabling works</li>
+        <li>Pile mat installation</li>
+        <li>Drainage installation</li>
+        <li>Attenuation tanks</li>
+        <li>Pre-cast manholes</li>
+        <li>Service duct installation</li>
+        <li>Pre-cast culvert installation</li>
+        <li>Ground water management</li>
+        <li>Ground beam construction</li>
+        <li>Sheet piling</li>
+      </ul>
+    </div>
+
+    <div class="panel" id="panel3">
+      <h3 class="pkg-head"><span class="code">PKG 03</span> — Reinforced Concrete</h3>
+      <p class="lede">The frame, from raft to core — in-situ, jumpform and pre-cast.</p>
+      <ul class="scope">
+        <li>Waterproofing</li>
+        <li>Pile caps and crane bases</li>
+        <li>Raft slabs</li>
+        <li>Concrete lift pits</li>
+        <li>Liner walls</li>
+        <li>RC walls and columns</li>
+        <li>RC cores</li>
+        <li>Jumpform cores</li>
+        <li>Suspended slabs</li>
+        <li>Pre-cast concrete stairs</li>
+        <li>In-situ stairs</li>
+      </ul>
+    </div>
+
+    <div class="panel" id="panel4">
+      <h3 class="pkg-head"><span class="code">PKG 04</span> — Hard Landscaping</h3>
+      <p class="lede">Everything outside the slab edge — roads, yards, security lines and street works.</p>
+      <ul class="scope">
+        <li>Asphalt roads</li>
+        <li>Kerbing</li>
+        <li>Paving</li>
+        <li>RC yard slabs</li>
+        <li>Street works</li>
+        <li>Signage</li>
+        <li>Street furniture</li>
+        <li>Temporary fencing</li>
+        <li>High security fencing &amp; gates</li>
+        <li>Hoarding</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="kicker">How we deliver</p>
+    <h2>One contractor, own plant, audited systems</h2>
+    <div class="cards">
+      <div class="card"><span class="tag">Delivery</span>
+        <h3>Self-delivery</h3>
+        <p>Glent Group self-deliver the CSA package — engineering, groundworks, concrete and externals under one roof, with the majority of growth coming through repeat business and continuing relationships.</p>
+      </div>
+      <div class="card"><span class="tag">Plant</span>
+        <h3>In-house plant</h3>
+        <p>Glent Plant Ltd, the group's own plant company based in Emmeloord, The&nbsp;Netherlands, keeps machines and programme in the same hands.</p>
+      </div>
+      <div class="card"><span class="tag">HSEQ</span>
+        <h3>Audited systems</h3>
+        <p>Management systems aligned to ISO&nbsp;9001:2015, ISO&nbsp;14001:2015 and ISO&nbsp;45001 — with a stated goal of industry-leading health and safety performance and an injury-free workplace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <div class="wrap">
+    <p class="kicker">Projects delivered</p>
+    <h2>The project register</h2>
+    <div class="register">
+      <div class="row head"><span>Project</span><span>For</span><span class="loc">Location</span></div>
+      <div class="row"><span class="code">FRA01</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
+      <div class="row"><span class="code">DUB 4 &amp; DUB 5</span><span class="client">Winthrop Technologies</span><span class="loc">Dublin · Ireland</span></div>
+      <div class="row"><span class="code">EEMS02</span><span class="client">Mercury Engineering</span><span class="loc">Groningen · Netherlands</span></div>
+      <div class="row"><span class="code">FR10x</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
+      <div class="row"><span class="code">AMS01</span><span class="client">Mercury Engineering</span><span class="loc">Amsterdam · Netherlands</span></div>
+      <div class="row"><span class="code">LEIDEN EXTERNALS</span><span class="client">SISK</span><span class="loc">Leiden · Netherlands</span></div>
+      <div class="row"><span class="code">BMS CAR T CENTRE</span><span class="client">DPS Global</span><span class="loc">Leiden · Netherlands</span></div>
+      <div class="row"><span class="code">IRON MOUNTAIN FRA01</span><span class="client">Collen</span><span class="loc">Frankfurt · Germany</span></div>
+      <div class="row"><span class="code">VANTAGE BER11–14</span><span class="client">Mercury Engineering</span><span class="loc">Berlin · Germany</span></div>
+      <div class="row"><span class="code">GOOGLE GRQ3–4 ENABLING</span><span class="client">Yondr</span><span class="loc">Eemshaven · Netherlands</span></div>
+      <div class="row"><span class="code">GOOGLE GRQ3</span><span class="client">BAM</span><span class="loc">Eemshaven · Netherlands</span></div>
+      <div class="row"><span class="code">GOOGLE GRQ3 &amp; GRQ4</span><span class="client">Fluor</span><span class="loc">Eemshaven · Netherlands</span></div>
+      <div class="row"><span class="code">FACEBOOK ODN1 &amp; ODN2</span><span class="client">Blu-3</span><span class="loc">Odense · Denmark</span></div>
+      <div class="row"><span class="code">EDGECONNEX AMS06</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
+      <div class="row"><span class="code">EDGECONNEX AMS05</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
+    </div>
+    <p class="clients-line">Client base includes <strong>Winthrop, Mercury, Yondr, Sisk, Collen, Fluor and NTT Global Data Centres</strong> — the majority of work won through repeat business.</p>
+  </div>
+</section>
+
+<section class="band" id="offices">
+  <div class="wrap">
+    <p class="kicker">Discuss a project</p>
+    <h2>Six offices across Europe</h2>
+    <div class="cards">
+      <div class="card office"><span class="tag">IE</span>
+        <h3>Ireland</h3><p class="entity">Glent Civil Engineering Ltd</p>
+        <address>3rd Floor, Ulysses House, Foley Street, Dublin 1, D01&nbsp;W2T2</address>
+        <a class="tel" href="tel:+35316972142">+353 1 697 2142</a>
+      </div>
+      <div class="card office"><span class="tag">DE</span>
+        <h3>Germany</h3><p class="entity">Glent GmbH</p>
+        <address>Kasinostr. 19–21, 42103 Wuppertal</address>
+        <a class="tel" href="tel:+4920294709171">+49 202 947 09171</a>
+      </div>
+      <div class="card office"><span class="tag">NL</span>
+        <h3>Netherlands</h3><p class="entity">Glent B.V.</p>
+        <address>Goeman Borgesiuslaan 77, 3515&nbsp;ET Utrecht</address>
+        <a class="tel" href="tel:+31208080175">+31 20 808 0175</a>
+      </div>
+      <div class="card office"><span class="tag">DK</span>
+        <h3>Denmark</h3><p class="entity">Glent ApS</p>
+        <address>c/o BDO, Havneholmen 29, DK-1561 Copenhagen V</address>
+        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a> <span class="chip">To confirm</span>
+      </div>
+      <div class="card office"><span class="tag">UK</span>
+        <h3>United Kingdom</h3><p class="entity">Glent Engineering Ltd</p>
+        <address>50–52 Wharf Road, London N1&nbsp;7EU</address>
+        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a>
+      </div>
+      <div class="card office"><span class="tag">SE</span>
+        <h3>Sweden</h3><p class="entity">Glent Sweden AB</p>
+        <address>c/o Moore KLN AB, Lilla Bommen 3B, 411&nbsp;04 Göteborg</address>
+        <a class="tel" href="tel:+46844689688">+46 8 446 896 88</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="wordmark">Glent</span>
+    <p><a class="link-plain" href="https://uk.linkedin.com/company/glent-group" rel="noopener nofollow" target="_blank">LinkedIn</a></p>
+    <p>© Glent Engineering Ltd 2026 · Glent Holdings Ltd — Ireland · Netherlands · Germany · Denmark · Sweden</p>
+  </div>
+</footer>
+
+</body>
+</html>
