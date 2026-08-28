@@ -1,82 +1,93 @@
 <!doctype html>
-<html lang="en" style="--pitch-accent:#f26a1b">
+<html lang="en" style="--pitch-accent:#FE5000">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" href="/favicon.png">
 <title>Glent Group — Self-delivered CSA packages for Data Centres &amp; Pharma across Europe</title>
 <meta name="description" content="Glent Group self-deliver CSA packages — groundworks, reinforced concrete, underground services and hard landscaping — for Data Centre and Pharmaceutical projects across mainland Europe. Operating since 2017, six European offices.">
 <link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 :root{
-  --bg:#141619;
-  --ink:#eef0ec;
-  --muted:#a7adaa;
-  --accent:#f26a1b;
-  --panel:#1d2024;
-  --panel-2:#22262b;
-  --line:rgba(255,255,255,.14);
-  --display:"Oswald",Impact,"Arial Narrow",sans-serif;
-  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#0F3D4B;
+  --band:#0B2E38;
+  --card:#14485A;
+  --deep:#08222A;
+  --ink:#F4F7F7;
+  --muted:#A8BEC4;
+  --accent:#FE5000;
+  --line:rgba(255,255,255,.16);
+  --sans:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body)}
-h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:1.04;
-  letter-spacing:.01em;margin:0 0 .4em;max-width:none;hyphens:none;overflow-wrap:normal}
-h1{font-size:clamp(3.4rem,17vw,8.5rem);font-weight:700;letter-spacing:.02em}
-h2{font-size:clamp(1.6rem,4.5vw,2.4rem);font-weight:700}
-h3{font-size:clamp(1.15rem,3vw,1.45rem);font-weight:500}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans)}
+h1,h2,h3{font-family:var(--sans);font-weight:700;line-height:1.08;
+  letter-spacing:-.01em;margin:0 0 .4em;max-width:none;hyphens:none;overflow-wrap:normal}
+h1{font-size:clamp(2.2rem,7.8vw,4.4rem)}
+h2{font-size:clamp(1.6rem,4.4vw,2.4rem)}
+h3{font-size:clamp(1.12rem,2.8vw,1.35rem)}
 p{max-width:65ch;margin:0 0 1em}
 a{color:var(--ink)}
 a:focus-visible,button:focus-visible,input:focus-visible+label{outline:2px solid var(--accent);outline-offset:3px}
 section{padding:64px 20px}
 .wrap{max-width:1120px;margin:0 auto}
-.kicker{font:700 12px/1.4 var(--mono);letter-spacing:.18em;text-transform:uppercase;
+.caps{font:600 12px/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.kicker{font:700 12px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;
   color:var(--accent);margin:0 0 14px;display:flex;align-items:center;gap:10px}
 .kicker::before{content:"";width:22px;height:2px;background:var(--accent);flex:none}
-.btn{display:inline-block;background:var(--accent);color:#141619;font:700 15px/1 var(--body);
-  text-transform:uppercase;letter-spacing:.06em;padding:16px 28px;text-decoration:none}
-.btn:hover{background:#ff7c30}
+.dot{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:#0F3D4B;font:700 14px/1 var(--sans);
+  text-transform:uppercase;letter-spacing:.08em;padding:16px 28px;text-decoration:none;border-radius:3px}
+.btn:hover{background:#ff6a24}
 .link-plain{color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-weight:600}
 .link-plain:hover{color:var(--ink)}
 .code{font-family:var(--mono);color:var(--accent);font-weight:700;letter-spacing:.04em}
 .chip{display:inline-block;font:700 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
-  color:#141619;background:#d7a12d;padding:4px 6px;border-radius:2px;vertical-align:2px}
+  color:#0F3D4B;background:#d7a12d;padding:4px 6px;border-radius:2px;vertical-align:2px}
+
+/* site header */
+.site-head{border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+.site-head{padding:0 20px}
+.brand img{display:block;height:34px;width:auto}
+.site-nav{display:flex;gap:26px}
+.site-nav a{color:var(--ink);text-decoration:none}
+.site-nav a:hover{color:var(--accent)}
+@media (max-width:599px){.site-nav{display:none}}
 
 /* hero */
-.hero{padding:76px 20px 64px;border-bottom:1px solid var(--line)}
+.hero{padding:72px 20px 64px;border-bottom:1px solid var(--line)}
 .hero .wrap{display:grid;gap:44px;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));align-items:end}
-.hero .sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--ink);max-width:34ch;margin:14px 0 30px}
+.hero .sub{font-size:clamp(1.05rem,2.2vw,1.25rem);color:var(--ink);max-width:36ch;margin:14px 0 30px}
 .hero .sub strong{color:var(--accent)}
 .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
 
 /* flagship spec card */
-.spec{background:var(--panel);border:1px solid var(--line);position:relative;padding:26px 24px 22px}
-.spec .tag{position:absolute;top:0;right:0;background:#0c0d0f;color:#fff;
-  font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px}
+.spec{background:var(--card);border:1px solid var(--line);position:relative;padding:26px 24px 22px;border-radius:4px}
+.spec .tag{position:absolute;top:0;right:0;background:var(--deep);color:#fff;
+  font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:0 4px 0 4px}
 .spec dl{display:grid;grid-template-columns:auto 1fr;gap:9px 18px;margin:16px 0 0;font-size:14.5px}
 .spec dt{font:700 11px/1.7 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .spec dd{margin:0}
-.spec .big{font:700 clamp(1.9rem,4vw,2.5rem)/1.05 var(--display);color:var(--accent)}
+.spec .big{font:700 clamp(2rem,4vw,2.7rem)/1.05 var(--sans);letter-spacing:-.02em;color:var(--accent)}
 
 /* facts strip */
 .facts{padding:0;border-bottom:1px solid var(--line)}
 .facts .wrap{max-width:none;display:grid;gap:1px;background:var(--line);
   grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))}
-.facts div{background:var(--panel);padding:22px 24px}
-.facts b{display:block;font:700 clamp(1.35rem,3vw,1.7rem)/1.15 var(--display);
-  text-transform:uppercase;letter-spacing:.02em}
-.facts span{font:600 11px/1.6 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.facts .wrap>div{background:var(--band);padding:22px 24px}
+.facts b{display:block;font:700 clamp(1.25rem,2.8vw,1.55rem)/1.2 var(--sans);letter-spacing:-.01em}
+.facts span{font:600 11px/1.8 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
 /* packages — radio tabs */
 .pkg-radios{position:absolute;opacity:0;pointer-events:none}
 .tabbar{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;border-bottom:1px solid var(--line)}
-.tabbar label{cursor:pointer;padding:13px 16px 11px;font:600 13px/1 var(--body);
-  letter-spacing:.05em;text-transform:uppercase;color:var(--muted);
+.tabbar label{cursor:pointer;padding:13px 16px 11px;font:600 12px/1.4 var(--sans);
+  letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
   border-bottom:3px solid transparent;margin-bottom:-1px}
 .tabbar label .code{color:inherit;margin-right:8px;font-size:11px}
 .tabbar label:hover{color:var(--ink)}
@@ -104,11 +115,11 @@ section{padding:64px 20px}
 }
 
 /* delivery cards */
-.band{background:var(--panel)}
+.band{background:var(--band)}
 .cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));margin-top:28px}
-.card{background:var(--panel-2);border:1px solid var(--line);padding:24px 22px;position:relative}
-.card .tag{position:absolute;top:0;right:0;background:#0c0d0f;color:#fff;
-  font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px}
+.card{background:var(--card);border:1px solid var(--line);padding:24px 22px;position:relative;border-radius:4px}
+.card .tag{position:absolute;top:0;right:0;background:var(--deep);color:#fff;
+  font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:0 4px 0 4px}
 .card p{font-size:15px;color:var(--muted);margin-bottom:0}
 
 /* project register */
@@ -117,7 +128,7 @@ section{padding:64px 20px}
   padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .row .code{font-size:13.5px}
 .row .client{font-weight:600}
-.row .loc{font-size:13px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;text-align:right}
+.row .loc{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;text-align:right;font-weight:600}
 .row.head{font:700 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;
   color:var(--muted);border-bottom:1px solid var(--ink);padding:10px 0}
 .row.head .loc{font:inherit;color:inherit}
@@ -138,9 +149,9 @@ section{padding:64px 20px}
 .office a.tel:hover{text-decoration:underline}
 
 /* footer */
-footer{padding:44px 20px 56px;border-top:1px solid var(--line)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:18px 34px;align-items:baseline;justify-content:space-between}
-.wordmark{font:700 1.5rem/1 var(--display);text-transform:uppercase;letter-spacing:.05em}
+footer{padding:44px 20px 56px;border-top:1px solid var(--line);background:var(--band)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:18px 34px;align-items:center;justify-content:space-between}
+footer img{display:block;height:28px;width:auto}
 footer p{margin:0;font-size:13.5px;color:var(--muted)}
 </style>
 </head>
@@ -174,13 +185,25 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
   <a href="/offer/">The offer</a>
 </nav>
 
+<div class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Glent — home">
+      <img src="/assets/img/glent-logo.png" alt="Glent" width="500" height="138">
+    </a>
+    <nav class="site-nav caps" aria-label="Sections">
+      <a href="#packages">Services</a>
+      <a href="#register">Projects</a>
+      <a href="#offices">Contact</a>
+    </nav>
+  </div>
+</div>
 
 <header class="hero">
   <div class="wrap">
     <div>
       <p class="kicker">CSA Contractor — Mainland Europe</p>
-      <h1 data-one-line>Glent</h1>
-      <p class="sub">Self-delivered CSA packages for <strong>Data Centre</strong> and <strong>Pharmaceutical</strong> projects — groundworks, reinforced concrete, underground services and hard landscaping, since 2017.</p>
+      <h1>Self-delivered CSA packages<span class="dot">.</span></h1>
+      <p class="sub">Groundworks, reinforced concrete, underground services and hard landscaping — for <strong>Data Centre</strong> and <strong>Pharmaceutical</strong> projects, since 2017.</p>
       <div class="actions">
         <a class="btn" href="#offices">Discuss a project</a>
         <a class="link-plain" href="#register">See the project register</a>
@@ -386,7 +409,7 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
 
 <footer>
   <div class="wrap">
-    <span class="wordmark">Glent</span>
+    <img src="/assets/img/glent-logo.png" alt="Glent" width="500" height="138">
     <p><a class="link-plain" href="https://uk.linkedin.com/company/glent-group" rel="noopener nofollow" target="_blank">LinkedIn</a></p>
     <p>© Glent Engineering Ltd 2026 · Glent Holdings Ltd — Ireland · Netherlands · Germany · Denmark · Sweden</p>
   </div>

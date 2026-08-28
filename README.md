@@ -29,7 +29,7 @@ A clean local copy of glent.com could not be made from this build environment (t
 ## External resources
 
 - `public/original/index.html` frames `https://glent.com/` (by design, see above).
-- Everything else is local: fonts are self-hosted in `public/fonts/` (Oswald 500/700, Inter 400/600 from npm `@fontsource`), no CDN fonts, no trackers, no third-party requests on `/` or `/offer/`.
+- Everything else is local: fonts are self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers, no third-party requests on `/` or `/offer/`.
 
 ## Facts and integrity
 
@@ -37,7 +37,8 @@ Every fact on the new site traces to `work/brief.json` (source + date seen, all 
 
 - The Danish office is listed on glent.com with a **+44 London number** (identical to the UK office's) — reproduced with a visible **TO CONFIRM** chip rather than silently repeated or silently "fixed".
 - "Götenborg" on their contact page is corrected to **Göteborg** (postcode 411 04 is unambiguous) — flagged in the brief's conflicts.
-- Exact brand hex values and typefaces are **derived** (their CSS is unreachable from this environment): dark ground + white wordmark + orange accent observed; Oswald/Inter are the house defaults standing in until their files arrive.
-- No client photography or logo files are used — their CDN is unreachable — so the page is typography-led. Ask for the photo pack and logo files.
+- Brand colours (`#0F3D4B` petrol, `#FE5000` orange) are sampled from the owner-supplied header screenshot and logo file; the logo lockup and favicon come from that file. The typeface is **Plus Jakarta Sans, identified by eye** from the screenshot — confirm and swap if their CSS says otherwise.
+- No photography is used (none supplied) — the page is typography-led. Ask for a photo pack if imagery is wanted.
+- `/offer/` carries **no prices** at the owner's instruction — it sells the improvements; commercials are discussed off-page.
 
 Open questions for the client are listed in `work/brief.json → questions`.

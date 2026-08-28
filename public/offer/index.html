@@ -1,65 +1,56 @@
 <!doctype html>
-<html lang="en" style="--pitch-accent:#f26a1b">
+<html lang="en" style="--pitch-accent:#FE5000">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <title>The offer — Glent Group</title>
   <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root{
-      --op-bg:#eceeea;
-      --op-ink:#16181c;
-      --op-accent:#f26a1b;
+      --op-bg:#F2F5F5;
+      --op-ink:#13343E;
+      --op-accent:#FE5000;
       --op-panel:#ffffff;
-      --op-dark:#141619;
-      --op-display:"Oswald",Impact,"Arial Narrow",sans-serif;
-      --op-body:"Inter",system-ui,-apple-system,sans-serif;
+      --op-dark:#0F3D4B;
+      --op-sans:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;
     }
     *{box-sizing:border-box}
     body{margin:0;background:var(--op-bg);color:var(--op-ink);
-      font:400 16px/1.55 var(--op-body)}
-    h1,h2,h3{font-family:var(--op-display);text-transform:uppercase;
-      line-height:1.05;letter-spacing:.01em;margin:0 0 .4em;
+      font:400 16px/1.55 var(--op-sans)}
+    h1,h2,h3{font-family:var(--op-sans);font-weight:700;
+      line-height:1.08;letter-spacing:-.01em;margin:0 0 .4em;
       max-width:none;hyphens:none;overflow-wrap:normal}
-    h1{font-size:clamp(2.1rem,7.5vw,3.6rem)}
-    h3{font-weight:500}
-    h2{font-size:clamp(1.5rem,4.5vw,2.2rem)}
+    h1{font-size:clamp(2rem,7vw,3.4rem)}
+    h2{font-size:clamp(1.5rem,4.4vw,2.2rem)}
+    h3{font-weight:600}
     p{max-width:65ch}
     section{padding:56px 20px}
     .wrap{max-width:1040px;margin:0 auto}
-    .band-dark{background:var(--op-dark);color:#eef0ec}
+    .band-dark{background:var(--op-dark);color:#F4F7F7}
     .band-panel{background:var(--op-panel)}
-    .kicker{font:800 12px/1 var(--op-body);letter-spacing:.16em;
-      text-transform:uppercase;color:var(--op-accent);margin:0 0 10px}
+    .kicker{font:700 12px/1.4 ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+      letter-spacing:.16em;text-transform:uppercase;color:var(--op-accent);margin:0 0 10px}
     .grid{display:grid;gap:18px;
       grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
-    .card{background:var(--op-panel);border:1px solid rgba(0,0,0,.12);
-      padding:22px;position:relative}
+    .card{background:var(--op-panel);border:1px solid rgba(15,61,75,.16);
+      padding:22px;position:relative;border-radius:4px}
     .card .tag{position:absolute;top:0;right:0;background:var(--op-dark);
-      color:#fff;font:700 10px/1 var(--op-body);letter-spacing:.14em;
-      text-transform:uppercase;padding:6px 9px}
-    .btn{display:inline-block;background:var(--op-accent);color:var(--op-dark);
-      font:700 15px/1 var(--op-body);text-transform:uppercase;
-      letter-spacing:.06em;padding:15px 26px;text-decoration:none}
+      color:#fff;font:700 10px/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;
+      text-transform:uppercase;padding:6px 9px;border-radius:0 4px 0 4px}
     table{width:100%;border-collapse:collapse;background:var(--op-panel)}
-    th,td{padding:13px 14px;border:1px solid rgba(0,0,0,.14);
+    th,td{padding:13px 14px;border:1px solid rgba(15,61,75,.18);
       text-align:left;vertical-align:top;font-size:15px}
-    thead th{background:var(--op-dark);color:#fff;font-family:var(--op-display);
-      text-transform:uppercase;letter-spacing:.05em}
+    thead th{background:var(--op-dark);color:#fff;font-family:var(--op-sans);
+      font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
     td:first-child{width:50%}
-    .price{font:700 clamp(2.6rem,9vw,4rem)/1 var(--op-display)}
-    .price small{font:600 13px/1.3 var(--op-body);text-transform:uppercase;
-      letter-spacing:.08em;display:block;margin-top:8px;color:inherit;opacity:.75}
-    .struck{opacity:.65}
-    .struck s{text-decoration-thickness:2px}
     .strip{display:grid;gap:2px;
       grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));
-      background:rgba(0,0,0,.14)}
+      background:rgba(15,61,75,.18)}
     .strip div{background:var(--op-panel);padding:16px;font-size:14px}
-    .strip b{display:block;font-family:var(--op-display);text-transform:uppercase;
-      font-size:17px;margin-bottom:4px}
+    .strip b{display:block;font-family:var(--op-sans);font-weight:700;
+      font-size:15px;margin-bottom:4px}
   </style>
 </head>
 <body>
@@ -92,13 +83,12 @@
   <a href="/offer/" aria-current="page">The offer</a>
 </nav>
 
-
 <section class="band-dark">
   <div class="wrap">
     <p class="kicker">The offer</p>
     <h1>A better site for Glent Group</h1>
     <p>You've just seen it — the first tab is the new site, built from what
-      glent.com already says about you. This page is the deal.</p>
+      glent.com already says about you. This page is what changes.</p>
   </div>
 </section>
 
@@ -127,46 +117,30 @@
 
 <section class="band-panel">
   <div class="wrap">
-    <h2>Two numbers, nothing monthly</h2>
-    <p class="struck"><s>£1,500–£8,000</s> what others charge,
-      freelance to agency.</p>
-    <div class="grid">
-      <div class="card"><span class="tag">The site</span>
-        <div class="price">£500<small>One-off · yours outright</small></div>
-      </div>
-      <div class="card"><span class="tag">Optional</span>
-        <div class="price">£50<small>Two weeks of unlimited
-          changes</small></div>
-      </div>
+    <h2>Under the hood</h2>
+    <p>Everything above is visible. These four aren't — until you look.</p>
+    <div class="strip">
+      <div><b>No trackers</b>Zero third-party requests. Nothing watching your
+        visitors, nothing slowing the page.</div>
+      <div><b>Self-hosted fonts</b>The brand typeface ships with the site —
+        no CDN round-trips, no flash of the wrong font.</div>
+      <div><b>Verified 320–1920</b>Every screen width from small phone to wide
+        desktop swept — nothing overflows, nothing breaks.</div>
+      <div><b>Search-ready</b>Proper titles and descriptions throughout,
+        switched on the day it moves to your domain.</div>
     </div>
-    <p style="margin-top:22px"><strong>Why it costs this:</strong> built by my
-      network of AI agents — heavy lifting in parallel, finished by hand.
-      Agency output without the agency invoice.</p>
   </div>
 </section>
 
 <section>
-  <div class="wrap">
-    <h2 data-one-line>Terms</h2>
-    <div class="strip">
-      <div><b>£0 until transfer</b>Live same day on a temporary link. You pay
-        only on transfer to your own domain — only if you want it.</div>
-      <div><b>Flat fee</b>The two numbers above are the whole bill.</div>
-      <div><b>Try before you buy</b>Use the demo, send your changes, then decide.</div>
-      <div><b>No retainers</b>Nothing recurring, ever.</div>
-      <div><b>No lock-in</b>Walk away at any point before transfer and owe nothing.</div>
-    </div>
-  </div>
-</section>
-
-<section class="band-panel">
   <div class="wrap">
     <h2>You own everything</h2>
     <div class="grid">
       <div class="card"><span class="tag">The code</span>
         <h3 data-one-line>Code</h3><p>Every file — yours outright.</p></div>
       <div class="card"><span class="tag">The host</span>
-        <h3 data-one-line>Host</h3><p>Free web hosting for life, on Cloudflare.</p></div>
+        <h3 data-one-line>Host</h3><p>Fast global hosting on Cloudflare —
+          set up and handed over.</p></div>
       <div class="card"><span class="tag">The setup</span>
         <h3 data-one-line>Setup</h3><p>I set it up and transfer it to you —
           nothing to learn.</p></div>
@@ -181,10 +155,6 @@
       that brought this link to you — the demo stays live while you decide.</p>
   </div>
 </section>
-
-<!-- OPTIONAL referral band — dropped: cold B2B first contact, would dilute
-     (references/offer.md §8). Restore with £50 / £75 if the pitch travels
-     by referral. -->
 
 </body>
 </html>

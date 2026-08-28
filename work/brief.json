@@ -3,75 +3,350 @@
   "captured": "2026-08-28",
   "capture_note": "Direct capture failed — sandbox proxy returns 'Host not in allowlist' for glent.com (script reported success; block page detected by inspection). /original/ ships as the honest frame fallback. All facts below were read from the live pages via fetch on 2026-08-28.",
   "brand": {
-    "colors": { "value": ["#141619", "#eef0ec", "#f26a1b", "#1d2024"], "source": "site:assets (white wordmark logo on dark ground; service icon files named 'Groundworks Orange', 'Reinforced concrete orange') — exact hex values derived, their CSS unreachable through the proxy", "seen": "2026-08-28", "confidence": "unconfirmed" },
-    "display_font": { "value": "Oswald", "source": "house-style default — their CSS unreachable, typefaces unknown", "seen": "2026-08-28", "confidence": "unconfirmed" },
-    "body_font": { "value": "Inter", "source": "house-style default", "seen": "2026-08-28", "confidence": "unconfirmed" },
-    "logo": { "value": "typographic wordmark 'GLENT' set in display type — their white PNG wordmark is on a CDN the sandbox cannot fetch", "source": "site:header (logo observed, not retrievable)", "seen": "2026-08-28", "confidence": "unconfirmed" },
-    "tone": { "value": "plain, technical, credential-led; scope lists and project codes rather than adjectives", "source": "site:copy", "seen": "2026-08-28", "confidence": "confirmed" }
+    "colors": {
+      "value": [
+        "#0F3D4B",
+        "#F4F7F7",
+        "#FE5000",
+        "#0B2E38"
+      ],
+      "source": "provided: owner-supplied header screenshot + logo file, sampled directly",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "display_font": {
+      "value": "Plus Jakarta Sans",
+      "source": "provided: identified by eye from the owner-supplied screenshot (single-storey hooked g, curved-bottom t, tall x-height) — not read from their CSS",
+      "seen": "2026-08-28",
+      "confidence": "unconfirmed"
+    },
+    "body_font": {
+      "value": "Plus Jakarta Sans",
+      "source": "same family throughout, matching their nav + tagline",
+      "seen": "2026-08-28",
+      "confidence": "unconfirmed"
+    },
+    "logo": {
+      "value": "assets/img/glent-logo.png — official lockup (orange mark + white wordmark), owner-supplied; favicon cut from the mark",
+      "source": "provided: owner upload",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "tone": {
+      "value": "plain, technical, credential-led; scope lists and project codes rather than adjectives",
+      "source": "site:copy",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    }
   },
   "facts": {
-    "offering": { "value": "Glent Group self-deliver CSA packages in the Data Centre and Pharmaceutical industries across mainland Europe", "source": "site:/ (What we do)", "seen": "2026-08-28", "confidence": "confirmed" },
-    "principal_areas": { "value": "Groundworks, Reinforced Concrete Structures, Underground Services, Hard Landscaping and Fencing", "source": "site:/about-us (body copy)", "seen": "2026-08-28", "confidence": "confirmed" },
-    "operating_since": { "value": "2017", "source": "site:/about-us — 'operating in Europe since 2017'", "seen": "2026-08-28", "confidence": "confirmed" },
-    "ownership": { "value": "Wholly owned by Alan Ferguson", "source": "site:/about-us", "seen": "2026-08-28", "confidence": "confirmed" },
-    "subsidiaries": { "value": "Glent Holdings Ltd with subsidiaries in Ireland, The Netherlands, Germany, Denmark and Sweden; UK office in London", "source": "site:/about-us + site:/contact-us", "seen": "2026-08-28", "confidence": "confirmed" },
-    "plant": { "value": "Glent Plant Ltd, in-house plant company, based in Emmeloord, The Netherlands", "source": "site:/about-us", "seen": "2026-08-28", "confidence": "confirmed" },
-    "repeat_business": { "value": "The majority of growth is through repeat business and continuing relationships", "source": "site:/about-us", "seen": "2026-08-28", "confidence": "confirmed" },
-    "clients_named_in_copy": { "value": "Winthrop, Mercury, Yondr, Sisk, Collen, Fluor and NTT Global Data Centres", "source": "site:/about-us ('Our client base includes')", "seen": "2026-08-28", "confidence": "confirmed" },
-    "clients_logo_wall": { "value": "BAM, Collen, DPS Global, Engie, Fluor, Google, ISG, Mercury Engineering, NTT, Sisk, Winthrop, Yondr (12 logos)", "source": "site:/about-us (logo image filenames)", "seen": "2026-08-28", "confidence": "confirmed" },
-    "hseq": { "value": "Management systems aligned to ISO 9001:2015, ISO 14001:2015 and ISO 45001; stated goal of industry-leading OH&S performance and an injury-free workplace", "source": "site:/health-safety (page copy, read via search snippet)", "seen": "2026-08-28", "confidence": "confirmed" },
-    "svc_engineering": { "value": ["Preconstruction Modelling and Planning", "Logistic Plans", "Stage 4 to Stage 5 technical submittals", "Underground Services Co-ordination", "BIM Modelling", "Temporary Works Designs", "Waterproofing Detailing"], "source": "site:/services", "seen": "2026-08-28", "confidence": "confirmed" },
-    "svc_groundworks": { "value": ["Bulk Excavation", "Shoring Systems", "Contaminated Ground Disposal", "Contaminated Ground Remediation", "Enabling Works", "Pile Mat Installation", "Drainage Installation", "Attenuation Tanks", "Pre-Cast Manholes", "Service Duct Installation", "Pre-Cast Culvert Installation", "Ground Water Management", "Ground Beam Construction", "Sheet Piling"], "source": "site:/services", "seen": "2026-08-28", "confidence": "confirmed" },
-    "svc_concrete": { "value": ["Waterproofing", "Pile Caps and Crane Bases", "Raft Slabs", "Concrete Lift Pits", "Liner Walls", "RC Walls and Columns", "RC Cores", "Jumpform Cores", "Suspended Slabs", "Pre-Cast Concrete Stairs", "In-situ Stairs"], "source": "site:/services", "seen": "2026-08-28", "confidence": "confirmed" },
-    "svc_landscaping": { "value": ["Asphalt Roads", "Kerbing", "Paving", "RC Yard Slabs", "Street Works", "Signage", "Street Furniture", "Temporary Fencing", "High Security Fencing & Gates", "Hoarding"], "source": "site:/services", "seen": "2026-08-28", "confidence": "confirmed" },
-    "projects_register": { "value": [
-      {"code": "FRA01", "client": "Winthrop Technologies", "location": "Frankfurt, Germany"},
-      {"code": "DUB 4 & DUB 5", "client": "Winthrop Technologies", "location": "Dublin, Ireland"},
-      {"code": "EEMS02", "client": "Mercury Engineering", "location": "Groningen, Netherlands"},
-      {"code": "FR10x", "client": "Winthrop Technologies", "location": "Frankfurt, Germany"},
-      {"code": "AMS01", "client": "Mercury Engineering", "location": "Amsterdam, Netherlands"},
-      {"code": "Leiden (externals)", "client": "SISK", "location": "Leiden, Netherlands"},
-      {"code": "BMS CAR T Cell Therapy Centre", "client": "DPS Global", "location": "Leiden, Netherlands"},
-      {"code": "Iron Mountain FRA01", "client": "Collen", "location": "Frankfurt, Germany"},
-      {"code": "Vantage BER11–BER14", "client": "Mercury Engineering", "location": "Berlin, Germany"},
-      {"code": "Google GRQ3 & GRQ4 Enabling Works", "client": "Yondr", "location": "Eemshaven, Netherlands"},
-      {"code": "Google GRQ3", "client": "BAM", "location": "Eemshaven, Netherlands"},
-      {"code": "Google GRQ3 & GRQ4", "client": "Fluor", "location": "Eemshaven, Netherlands"},
-      {"code": "Facebook ODN1 & ODN2", "client": "Blu-3", "location": "Odense, Denmark"},
-      {"code": "Edgeconnex AMS06", "client": "Winthrop", "location": "Amsterdam, Netherlands"},
-      {"code": "Edgeconnex AMS05", "client": "Winthrop", "location": "Amsterdam, Netherlands"}
-    ], "source": "site:/projects (15 entries)", "seen": "2026-08-28", "confidence": "confirmed" },
-    "flagship_fra01": { "value": "FRA01, Frankfurt — Winthrop Technologies, Data Centre, €43m. Largest project to date: 18,000 m² building, three data centre modules plus front of house, basement raft slab c.7 m below ground, concrete frame for the entire structure, all underground services and hard landscaping across the 39,000 m² site", "source": "site:/projects/fra01-2 (rephrased; original contains the 'abasement' typo)", "seen": "2026-08-28", "confidence": "confirmed" },
-    "offices": { "value": [
-      {"country": "Ireland", "entity": "Glent Civil Engineering Ltd", "address": "3rd Floor, Ulysses House, Foley Street, Dublin 1, D01 W2T2", "tel": "+353 1 697 2142"},
-      {"country": "Germany", "entity": "Glent GmbH", "address": "Kasinostr. 19-21, 42103 Wuppertal", "tel": "+49 202 947 09171"},
-      {"country": "Netherlands", "entity": "Glent B.V.", "address": "Goeman Borgesiuslaan 77, 3515 ET Utrecht", "tel": "+31 20 808 0175"},
-      {"country": "Denmark", "entity": "Glent ApS", "address": "c/o BDO, Havneholmen 29, DK-1561 Copenhagen V", "tel": "+44 20 4599 1174"},
-      {"country": "United Kingdom", "entity": "Glent Engineering Ltd", "address": "50-52 Wharf Road, London N1 7EU", "tel": "+44 20 4599 1174"},
-      {"country": "Sweden", "entity": "Glent Sweden AB", "address": "c/o Moore KLN AB, Lilla Bommen 3B, 411 04 Göteborg", "tel": "+46 8 446 896 88"}
-    ], "source": "site:/contact-us", "seen": "2026-08-28", "confidence": "confirmed" },
-    "linkedin": { "value": "https://uk.linkedin.com/company/glent-group", "source": "site:footer", "seen": "2026-08-28", "confidence": "confirmed" }
+    "offering": {
+      "value": "Glent Group self-deliver CSA packages in the Data Centre and Pharmaceutical industries across mainland Europe",
+      "source": "site:/ (What we do)",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "principal_areas": {
+      "value": "Groundworks, Reinforced Concrete Structures, Underground Services, Hard Landscaping and Fencing",
+      "source": "site:/about-us (body copy)",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "operating_since": {
+      "value": "2017",
+      "source": "site:/about-us — 'operating in Europe since 2017'",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "ownership": {
+      "value": "Wholly owned by Alan Ferguson",
+      "source": "site:/about-us",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "subsidiaries": {
+      "value": "Glent Holdings Ltd with subsidiaries in Ireland, The Netherlands, Germany, Denmark and Sweden; UK office in London",
+      "source": "site:/about-us + site:/contact-us",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "plant": {
+      "value": "Glent Plant Ltd, in-house plant company, based in Emmeloord, The Netherlands",
+      "source": "site:/about-us",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "repeat_business": {
+      "value": "The majority of growth is through repeat business and continuing relationships",
+      "source": "site:/about-us",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "clients_named_in_copy": {
+      "value": "Winthrop, Mercury, Yondr, Sisk, Collen, Fluor and NTT Global Data Centres",
+      "source": "site:/about-us ('Our client base includes')",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "clients_logo_wall": {
+      "value": "BAM, Collen, DPS Global, Engie, Fluor, Google, ISG, Mercury Engineering, NTT, Sisk, Winthrop, Yondr (12 logos)",
+      "source": "site:/about-us (logo image filenames)",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "hseq": {
+      "value": "Management systems aligned to ISO 9001:2015, ISO 14001:2015 and ISO 45001; stated goal of industry-leading OH&S performance and an injury-free workplace",
+      "source": "site:/health-safety (page copy, read via search snippet)",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "svc_engineering": {
+      "value": [
+        "Preconstruction Modelling and Planning",
+        "Logistic Plans",
+        "Stage 4 to Stage 5 technical submittals",
+        "Underground Services Co-ordination",
+        "BIM Modelling",
+        "Temporary Works Designs",
+        "Waterproofing Detailing"
+      ],
+      "source": "site:/services",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "svc_groundworks": {
+      "value": [
+        "Bulk Excavation",
+        "Shoring Systems",
+        "Contaminated Ground Disposal",
+        "Contaminated Ground Remediation",
+        "Enabling Works",
+        "Pile Mat Installation",
+        "Drainage Installation",
+        "Attenuation Tanks",
+        "Pre-Cast Manholes",
+        "Service Duct Installation",
+        "Pre-Cast Culvert Installation",
+        "Ground Water Management",
+        "Ground Beam Construction",
+        "Sheet Piling"
+      ],
+      "source": "site:/services",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "svc_concrete": {
+      "value": [
+        "Waterproofing",
+        "Pile Caps and Crane Bases",
+        "Raft Slabs",
+        "Concrete Lift Pits",
+        "Liner Walls",
+        "RC Walls and Columns",
+        "RC Cores",
+        "Jumpform Cores",
+        "Suspended Slabs",
+        "Pre-Cast Concrete Stairs",
+        "In-situ Stairs"
+      ],
+      "source": "site:/services",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "svc_landscaping": {
+      "value": [
+        "Asphalt Roads",
+        "Kerbing",
+        "Paving",
+        "RC Yard Slabs",
+        "Street Works",
+        "Signage",
+        "Street Furniture",
+        "Temporary Fencing",
+        "High Security Fencing & Gates",
+        "Hoarding"
+      ],
+      "source": "site:/services",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "projects_register": {
+      "value": [
+        {
+          "code": "FRA01",
+          "client": "Winthrop Technologies",
+          "location": "Frankfurt, Germany"
+        },
+        {
+          "code": "DUB 4 & DUB 5",
+          "client": "Winthrop Technologies",
+          "location": "Dublin, Ireland"
+        },
+        {
+          "code": "EEMS02",
+          "client": "Mercury Engineering",
+          "location": "Groningen, Netherlands"
+        },
+        {
+          "code": "FR10x",
+          "client": "Winthrop Technologies",
+          "location": "Frankfurt, Germany"
+        },
+        {
+          "code": "AMS01",
+          "client": "Mercury Engineering",
+          "location": "Amsterdam, Netherlands"
+        },
+        {
+          "code": "Leiden (externals)",
+          "client": "SISK",
+          "location": "Leiden, Netherlands"
+        },
+        {
+          "code": "BMS CAR T Cell Therapy Centre",
+          "client": "DPS Global",
+          "location": "Leiden, Netherlands"
+        },
+        {
+          "code": "Iron Mountain FRA01",
+          "client": "Collen",
+          "location": "Frankfurt, Germany"
+        },
+        {
+          "code": "Vantage BER11–BER14",
+          "client": "Mercury Engineering",
+          "location": "Berlin, Germany"
+        },
+        {
+          "code": "Google GRQ3 & GRQ4 Enabling Works",
+          "client": "Yondr",
+          "location": "Eemshaven, Netherlands"
+        },
+        {
+          "code": "Google GRQ3",
+          "client": "BAM",
+          "location": "Eemshaven, Netherlands"
+        },
+        {
+          "code": "Google GRQ3 & GRQ4",
+          "client": "Fluor",
+          "location": "Eemshaven, Netherlands"
+        },
+        {
+          "code": "Facebook ODN1 & ODN2",
+          "client": "Blu-3",
+          "location": "Odense, Denmark"
+        },
+        {
+          "code": "Edgeconnex AMS06",
+          "client": "Winthrop",
+          "location": "Amsterdam, Netherlands"
+        },
+        {
+          "code": "Edgeconnex AMS05",
+          "client": "Winthrop",
+          "location": "Amsterdam, Netherlands"
+        }
+      ],
+      "source": "site:/projects (15 entries)",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "flagship_fra01": {
+      "value": "FRA01, Frankfurt — Winthrop Technologies, Data Centre, €43m. Largest project to date: 18,000 m² building, three data centre modules plus front of house, basement raft slab c.7 m below ground, concrete frame for the entire structure, all underground services and hard landscaping across the 39,000 m² site",
+      "source": "site:/projects/fra01-2 (rephrased; original contains the 'abasement' typo)",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "offices": {
+      "value": [
+        {
+          "country": "Ireland",
+          "entity": "Glent Civil Engineering Ltd",
+          "address": "3rd Floor, Ulysses House, Foley Street, Dublin 1, D01 W2T2",
+          "tel": "+353 1 697 2142"
+        },
+        {
+          "country": "Germany",
+          "entity": "Glent GmbH",
+          "address": "Kasinostr. 19-21, 42103 Wuppertal",
+          "tel": "+49 202 947 09171"
+        },
+        {
+          "country": "Netherlands",
+          "entity": "Glent B.V.",
+          "address": "Goeman Borgesiuslaan 77, 3515 ET Utrecht",
+          "tel": "+31 20 808 0175"
+        },
+        {
+          "country": "Denmark",
+          "entity": "Glent ApS",
+          "address": "c/o BDO, Havneholmen 29, DK-1561 Copenhagen V",
+          "tel": "+44 20 4599 1174"
+        },
+        {
+          "country": "United Kingdom",
+          "entity": "Glent Engineering Ltd",
+          "address": "50-52 Wharf Road, London N1 7EU",
+          "tel": "+44 20 4599 1174"
+        },
+        {
+          "country": "Sweden",
+          "entity": "Glent Sweden AB",
+          "address": "c/o Moore KLN AB, Lilla Bommen 3B, 411 04 Göteborg",
+          "tel": "+46 8 446 896 88"
+        }
+      ],
+      "source": "site:/contact-us",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    },
+    "linkedin": {
+      "value": "https://uk.linkedin.com/company/glent-group",
+      "source": "site:footer",
+      "seen": "2026-08-28",
+      "confidence": "confirmed"
+    }
   },
   "conflicts": [
-    { "field": "positioning", "site": "Homepage: 'self-deliver CSA packages in the Data Centre and Pharmaceutical industries across mainland Europe'", "site_meta": "Services meta: 'groundworks on commercial, residential and datacentre developments'; About/Contact metas: 'Groundworks, Concrete Works including RC Frames and Basements, Service Installations, Structural Alterations and External Works'", "on_page": "site", "question": "The homepage body copy is used as the one positioning line — confirm it. The old meta descriptions (mentioning 'residential') look like leftovers." },
-    { "field": "denmark_phone", "site": "Denmark office listed with +44 20 4599 1174 — a London number, identical to the UK office's", "on_page": "site", "question": "Is the +44 number genuinely the Danish contact line, or a paste error? Shown with a TO CONFIRM chip on the demo." },
-    { "field": "sweden_city", "site": "'Götenborg' on the contact page", "on_page": "corrected to Göteborg (postcode 411 04 is unambiguous)", "question": "Corrected on the demo — flag the typo to the client." }
+    {
+      "field": "positioning",
+      "site": "Homepage: 'self-deliver CSA packages in the Data Centre and Pharmaceutical industries across mainland Europe'",
+      "site_meta": "Services meta: 'groundworks on commercial, residential and datacentre developments'; About/Contact metas: 'Groundworks, Concrete Works including RC Frames and Basements, Service Installations, Structural Alterations and External Works'",
+      "on_page": "site",
+      "question": "The homepage body copy is used as the one positioning line — confirm it. The old meta descriptions (mentioning 'residential') look like leftovers."
+    },
+    {
+      "field": "denmark_phone",
+      "site": "Denmark office listed with +44 20 4599 1174 — a London number, identical to the UK office's",
+      "on_page": "site",
+      "question": "Is the +44 number genuinely the Danish contact line, or a paste error? Shown with a TO CONFIRM chip on the demo."
+    },
+    {
+      "field": "sweden_city",
+      "site": "'Götenborg' on the contact page",
+      "on_page": "corrected to Göteborg (postcode 411 04 is unambiguous)",
+      "question": "Corrected on the demo — flag the typo to the client."
+    }
   ],
   "gaps": [
     "Contact email addresses unreadable — Cloudflare email obfuscation cannot be resolved through the sandbox. No email shown on the demo; ask for the enquiry address.",
-    "No photography or logo files usable — their Webflow CDN is unreachable from the sandbox, so the demo is typography-led. Ask for the logo files and a photo pack (site and project photography clearly exists — hero video, project images).",
     "No testimonials anywhere on the site despite seven named repeat clients.",
     "No careers path on the site despite About copy leaning on training, wellbeing and development — second audience unserved; a client question, not invented content.",
-    "No named pre-construction / estimating contact for tender enquiries."
+    "No named pre-construction / estimating contact for tender enquiries.",
+    "Logo now supplied; photography still is not — the demo stays typography-led. Ask for a photo pack if imagery is wanted."
   ],
   "questions": [
     "Confirm the one-line positioning (homepage version used).",
     "Correct Danish phone number?",
     "Enquiry email address (and per-office emails if wanted)?",
-    "Logo files and photo/clearance pack?",
+    "Confirm the site typeface — Plus Jakarta Sans used from an eyeball match; swap is one command if it's actually another family.",
     "A quote from one repeat client (Winthrop / Mercury / Sisk)?",
     "Should a careers line be added, and where do applications go?",
     "Named contact for tender enquiries?"
   ],
-  "photos": []
+  "photos": [],
+  "owner_overrides": [
+    "2026-08-28: all prices removed from /offer/ at the owner's instruction — the page sells the improvements only; commercials to be discussed off-page."
+  ]
 }

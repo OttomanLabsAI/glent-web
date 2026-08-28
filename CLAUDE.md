@@ -37,7 +37,7 @@ npm run dev          # wrangler dev
    screenshots: styles applied, fonts loaded, layout intact.
 3. This repo also carries the site-pitch layout gate — run
    `verify-layout.js` (site-pitch skill) two-pass: `/,/offer/` with
-   `--fonts "Oswald,Inter" --original-host glent.com`, then `/original/`
+   `--fonts "Plus Jakarta Sans" --original-host glent.com`, then `/original/`
    alone (its iframe to glent.com is the sanctioned frame fallback).
 
 Never leave pushed work unverified or half-finished. Work in small, complete
@@ -79,8 +79,12 @@ Facts on the new site trace to `work/brief.json`; the TO CONFIRM chip on the
 Danish phone number is deliberate (glent.com lists a +44 number there) — do not
 remove it without the client's answer.
 
+The offer page carries no prices — removed at the owner's instruction on
+2026-08-28. Do not reintroduce the fee sheet without being asked.
+
 ## Release ledger
 
 | Version | Title | Description |
 | --- | --- | --- |
 | v1.0 | The Glent pitch demo, three tabs, verified | New one-page site for Glent Group built from their own facts, their live site framed alongside it, and the offer page carrying the standard numbers. Layout verified 320–1920 with self-hosted fonts. |
+| v1.1 | Dressed in the real brand, priced in silence | The demo now wears Glent's actual identity — their petrol teal, their orange, their logo and typeface — and the offer page drops every number to sell the improvements alone. |
