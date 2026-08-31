@@ -1,0 +1,3 @@
+# Pitch demo — never indexed.
+User-agent: *
+Disallow: /
