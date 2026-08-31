@@ -14,7 +14,7 @@ public/            everything served
   index.html       the new one-page site
   original/        their live site, framed (capture blocked — see README)
   offer/           the offer page
-  fonts/           self-hosted Oswald + Inter (@fontsource)
+  fonts/           self-hosted Plus Jakarta Sans (@fontsource)
   404.html
   _headers         security + caching headers
   robots.txt       disallow all — pitch demo, never indexed
@@ -88,3 +88,4 @@ The offer page carries no prices — removed at the owner's instruction on
 | --- | --- | --- |
 | v1.0 | The Glent pitch demo, three tabs, verified | New one-page site for Glent Group built from their own facts, their live site framed alongside it, and the offer page carrying the standard numbers. Layout verified 320–1920 with self-hosted fonts. |
 | v1.1 | Dressed in the real brand, priced in silence | The demo now wears Glent's actual identity — their petrol teal, their orange, their logo and typeface — and the offer page drops every number to sell the improvements alone. |
+| v1.2 | The demo moves into its own home | The pitch demo now lives in its own GitHub repository, wired for Cloudflare hosting so every change pushed to main goes straight to the live site. The pages themselves are untouched — this release is the ground under them. |

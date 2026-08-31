@@ -6,7 +6,7 @@ Site-pitch demo for **Glent Group** (glent.com) — a three-tab pitch wired by a
 |---|---|
 | `/` | The new one-page site — self-delivered CSA packages, Data Centres & Pharma, Europe |
 | `/original/` | Their live site shown in a frame (see note below) |
-| `/offer/` | The offer — tale of the tape, £500 / £50, terms |
+| `/offer/` | The offer — tale of the tape, the improvements, terms (no prices, by instruction) |
 
 A Cloudflare Workers static-assets site: everything served lives in `public/`, no build step.
 
