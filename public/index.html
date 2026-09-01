@@ -122,6 +122,14 @@ section{padding:64px 20px}
   font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:0 4px 0 4px}
 .card p{font-size:15px;color:var(--muted);margin-bottom:0}
 
+/* hseq / certifications */
+.hseq{border-bottom:1px solid var(--line)}
+.hseq strong{color:var(--accent)}
+.certs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(120px,100%),1fr));max-width:640px;margin:30px 0 0}
+.certs svg{display:block;width:100%;height:auto;border-radius:3px}
+.certs text{font-family:var(--sans)}
+.hseq h3{margin:38px 0 0}
+
 /* project register */
 .register{margin:30px 0 0;border-top:2px solid var(--ink)}
 .row{display:grid;grid-template-columns:230px 1fr 230px;gap:8px 24px;
@@ -193,6 +201,7 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
     <nav class="site-nav caps" aria-label="Sections">
       <a href="#packages">Services</a>
       <a href="#register">Projects</a>
+      <a href="#hseq">HSEQ</a>
       <a href="#offices">Contact</a>
     </nav>
   </div>
@@ -336,9 +345,81 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
       </div>
       <div class="card"><span class="tag">HSEQ</span>
         <h3>Audited systems</h3>
-        <p>Management systems aligned to ISO&nbsp;9001:2015, ISO&nbsp;14001:2015 and ISO&nbsp;45001 — with a stated goal of industry-leading health and safety performance and an injury-free workplace.</p>
+        <p>An NQA-certified integrated management system — ISO&nbsp;9001:2015, ISO&nbsp;14001:2015 and ISO&nbsp;45001:2018 — with a stated goal of industry-leading health and safety performance and an injury-free workplace.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="hseq" id="hseq">
+  <div class="wrap">
+    <p class="kicker">Health · Safety · Environment · Quality</p>
+    <h2>Working to the highest standards</h2>
+    <p style="color:var(--muted)">The primary goal is construction-industry-leading occupational health and safety performance and wellbeing — which ultimately means <strong>an injury-free workplace</strong>.</p>
+    <p style="color:var(--muted)">Glent Group operates and maintains accreditation to an NQA-certified Integrated Management System. ISO&nbsp;9001:2015, ISO&nbsp;14001:2015 and ISO&nbsp;45001:2018 share the same high-level structure, so one set of manuals and procedures carries all three — with document and records control, internal audits, and corrective and preventive action required throughout.</p>
+    <div class="certs" role="group" aria-label="NQA certification marks">
+      <svg viewBox="0 0 200 300" role="img" aria-labelledby="cert-ims-t">
+        <title id="cert-ims-t">NQA certification mark — ISO 9001, ISO 14001 and ISO 45001 Integrated Management</title>
+        <rect x="1.5" y="1.5" width="197" height="297" fill="#fff" stroke="#191919" stroke-width="3"/>
+        <circle cx="100" cy="80" r="54" fill="#0E76BD"/>
+        <text x="95" y="95" text-anchor="middle" font-weight="700" font-size="40" letter-spacing="-1" fill="#fff">nqa</text>
+        <circle cx="137" cy="90" r="5.5" fill="#F0973B"/>
+        <text x="100" y="166" text-anchor="middle" font-weight="700" font-size="22" fill="#111">ISO 9001</text>
+        <text x="100" y="193" text-anchor="middle" font-weight="700" font-size="22" fill="#111">ISO 14001</text>
+        <text x="100" y="220" text-anchor="middle" font-weight="700" font-size="22" fill="#111">ISO 45001</text>
+        <rect x="0" y="233" width="200" height="67" fill="#191919"/>
+        <text x="100" y="261" text-anchor="middle" font-weight="700" font-size="16" letter-spacing=".5" fill="#fff">INTEGRATED</text>
+        <text x="100" y="281" text-anchor="middle" font-weight="700" font-size="16" letter-spacing=".5" fill="#fff">MANAGEMENT</text>
+      </svg>
+      <svg viewBox="0 0 200 300" role="img" aria-labelledby="cert-9001-t">
+        <title id="cert-9001-t">NQA certification mark — ISO 9001 Quality Management</title>
+        <rect x="1.5" y="1.5" width="197" height="297" fill="#fff" stroke="#191919" stroke-width="3"/>
+        <circle cx="100" cy="88" r="58" fill="#0E76BD"/>
+        <text x="94" y="104" text-anchor="middle" font-weight="700" font-size="44" letter-spacing="-1" fill="#fff">nqa</text>
+        <circle cx="142" cy="98" r="6" fill="#F0973B"/>
+        <text x="100" y="199" text-anchor="middle" font-weight="700" font-size="26" fill="#111">ISO 9001</text>
+        <rect x="0" y="233" width="200" height="67" fill="#191919"/>
+        <text x="100" y="260" text-anchor="middle" font-weight="700" font-size="16" letter-spacing=".5" fill="#fff">QUALITY</text>
+        <text x="100" y="280" text-anchor="middle" font-weight="700" font-size="16" letter-spacing=".5" fill="#fff">MANAGEMENT</text>
+      </svg>
+      <svg viewBox="0 0 200 300" role="img" aria-labelledby="cert-14001-t">
+        <title id="cert-14001-t">NQA certification mark — ISO 14001 Environmental Management</title>
+        <rect x="1.5" y="1.5" width="197" height="297" fill="#fff" stroke="#191919" stroke-width="3"/>
+        <circle cx="100" cy="88" r="58" fill="#0E76BD"/>
+        <text x="94" y="104" text-anchor="middle" font-weight="700" font-size="44" letter-spacing="-1" fill="#fff">nqa</text>
+        <circle cx="142" cy="98" r="6" fill="#F0973B"/>
+        <text x="100" y="199" text-anchor="middle" font-weight="700" font-size="26" fill="#111">ISO 14001</text>
+        <rect x="0" y="233" width="200" height="67" fill="#191919"/>
+        <text x="100" y="260" text-anchor="middle" font-weight="700" font-size="15" letter-spacing=".4" fill="#fff">ENVIRONMENTAL</text>
+        <text x="100" y="280" text-anchor="middle" font-weight="700" font-size="15" letter-spacing=".4" fill="#fff">MANAGEMENT</text>
+      </svg>
+      <svg viewBox="0 0 200 300" role="img" aria-labelledby="cert-45001-t">
+        <title id="cert-45001-t">NQA certification mark — ISO 45001 Health and Safety Management</title>
+        <rect x="1.5" y="1.5" width="197" height="297" fill="#fff" stroke="#191919" stroke-width="3"/>
+        <circle cx="100" cy="88" r="58" fill="#0E76BD"/>
+        <text x="94" y="104" text-anchor="middle" font-weight="700" font-size="44" letter-spacing="-1" fill="#fff">nqa</text>
+        <circle cx="142" cy="98" r="6" fill="#F0973B"/>
+        <text x="100" y="199" text-anchor="middle" font-weight="700" font-size="26" fill="#111">ISO 45001</text>
+        <rect x="0" y="233" width="200" height="67" fill="#191919"/>
+        <text x="100" y="254" text-anchor="middle" font-weight="700" font-size="15" letter-spacing=".4" fill="#fff">HEALTH</text>
+        <text x="100" y="272" text-anchor="middle" font-weight="700" font-size="15" letter-spacing=".4" fill="#fff">&amp; SAFETY</text>
+        <text x="100" y="290" text-anchor="middle" font-weight="700" font-size="15" letter-spacing=".4" fill="#fff">MANAGEMENT</text>
+      </svg>
+    </div>
+    <h3>Intended outcomes of the system</h3>
+    <ul class="scope">
+      <li>A stronger knowledge base and a proactive approach to a healthy, safe, clean workplace</li>
+      <li>Customer satisfaction and employee pride</li>
+      <li>Continual improvement of the system's performance</li>
+      <li>A culture that supports the system's intended outcomes</li>
+      <li>Worker participation through consultation</li>
+      <li>The resources to keep work safe, healthy and sustainable</li>
+      <li>Policies compatible with the group's strategic direction</li>
+      <li>Hazards identified, risks controlled, opportunities taken</li>
+      <li>Performance monitored through internal audit</li>
+      <li>The system integrated into the group's business processes</li>
+      <li>Impacts to the environment and community minimised</li>
+    </ul>
   </div>
 </section>
 

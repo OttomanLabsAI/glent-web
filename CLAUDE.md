@@ -82,6 +82,11 @@ remove it without the client's answer.
 The offer page carries no prices — removed at the owner's instruction on
 2026-08-28. Do not reintroduce the fee sheet without being asked.
 
+The HSEQ section on the new site carries owner-supplied copy (2026-09-01). Its
+four NQA marks are inline-SVG recreations — the badge images arrived as chat
+pastes that never reached disk. When the owner supplies the official files,
+swap them in; do not redraw or restyle the recreations.
+
 ## Release ledger
 
 | Version | Title | Description |
@@ -89,3 +94,4 @@ The offer page carries no prices — removed at the owner's instruction on
 | v1.0 | The Glent pitch demo, three tabs, verified | New one-page site for Glent Group built from their own facts, their live site framed alongside it, and the offer page carrying the standard numbers. Layout verified 320–1920 with self-hosted fonts. |
 | v1.1 | Dressed in the real brand, priced in silence | The demo now wears Glent's actual identity — their petrol teal, their orange, their logo and typeface — and the offer page drops every number to sell the improvements alone. |
 | v1.2 | The demo moves into its own home | The pitch demo now lives in its own GitHub repository, wired for Cloudflare hosting so every change pushed to main goes straight to the live site. The pages themselves are untouched — this release is the ground under them. |
+| v1.3 | The safety credentials take their place | The new site now tells the health, safety, environment and quality story — the injury-free goal, the certified integrated management system and its intended outcomes, and the NQA marks for ISO 9001, 14001 and 45001 — set in the same clean style as the rest of the page. |

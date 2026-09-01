@@ -95,9 +95,9 @@
       "confidence": "confirmed"
     },
     "hseq": {
-      "value": "Management systems aligned to ISO 9001:2015, ISO 14001:2015 and ISO 45001; stated goal of industry-leading OH&S performance and an injury-free workplace",
-      "source": "site:/health-safety (page copy, read via search snippet)",
-      "seen": "2026-08-28",
+      "value": "NQA-certified Integrated Management System — ISO 9001:2015 (quality), ISO 14001:2015 (environmental), ISO 45001:2018 (health & safety). Primary goal: construction-industry-leading OH&S performance and wellbeing — an injury-free workplace. The three standards share one high-level structure carried by one set of manuals and procedures; all require document and records control, internal audits, and corrective and preventive actions. Eleven stated intended outcomes (knowledge base, satisfaction and pride, continual improvement, supportive culture, worker consultation, resourcing, aligned policies, hazard/risk/opportunity processes, audit-based monitoring, business-process integration, minimised environmental and community impacts).",
+      "source": "provided: owner-pasted HSEQ page copy + four NQA certification badge images, 2026-09-01 (supersedes the 2026-08-28 search-snippet reading)",
+      "seen": "2026-09-01",
       "confidence": "confirmed"
     },
     "svc_engineering": {
@@ -334,7 +334,8 @@
     "No testimonials anywhere on the site despite seven named repeat clients.",
     "No careers path on the site despite About copy leaning on training, wellbeing and development — second audience unserved; a client question, not invented content.",
     "No named pre-construction / estimating contact for tender enquiries.",
-    "Logo now supplied; photography still is not — the demo stays typography-led. Ask for a photo pack if imagery is wanted."
+    "Logo now supplied; photography still is not — the demo stays typography-led. Ask for a photo pack if imagery is wanted.",
+    "NQA badge images arrived as chat pastes the tooling could not save to disk — the four marks on /#hseq are inline-SVG recreations. Ask for the official badge files and swap them in."
   ],
   "questions": [
     "Confirm the one-line positioning (homepage version used).",
@@ -347,6 +348,7 @@
   ],
   "photos": [],
   "owner_overrides": [
-    "2026-08-28: all prices removed from /offer/ at the owner's instruction — the page sells the improvements only; commercials to be discussed off-page."
+    "2026-08-28: all prices removed from /offer/ at the owner's instruction — the page sells the improvements only; commercials to be discussed off-page.",
+    "2026-09-01: HSEQ content added to the new site at the owner's instruction — full Health & Safety page copy and four NQA certification badges supplied in chat, placement left to the builder."
   ]
 }

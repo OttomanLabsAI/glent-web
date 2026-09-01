@@ -40,5 +40,6 @@ Every fact on the new site traces to `work/brief.json` (source + date seen, all 
 - Brand colours (`#0F3D4B` petrol, `#FE5000` orange) are sampled from the owner-supplied header screenshot and logo file; the logo lockup and favicon come from that file. The typeface is **Plus Jakarta Sans, identified by eye** from the screenshot — confirm and swap if their CSS says otherwise.
 - No photography is used (none supplied) — the page is typography-led. Ask for a photo pack if imagery is wanted.
 - `/offer/` carries **no prices** at the owner's instruction — it sells the improvements; commercials are discussed off-page.
+- The HSEQ section (`/#hseq`, added 2026-09-01) carries the owner-supplied copy of glent.com's Health & Safety page. The four NQA certification marks there are **inline-SVG recreations** of badge images pasted in chat — the pastes never reached the repo as files — so swap in the official artwork when it is supplied.
 
 Open questions for the client are listed in `work/brief.json → questions`.
