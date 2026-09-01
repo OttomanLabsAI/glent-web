@@ -330,7 +330,7 @@
     }
   ],
   "gaps": [
-    "Contact email addresses unreadable — Cloudflare email obfuscation cannot be resolved through the sandbox. No email shown on the demo; ask for the enquiry address.",
+    "Contact email addresses unreadable — Cloudflare email obfuscation cannot be resolved through the sandbox. No email shown on the demo; ask for the enquiry address. The enquiry form (added 2026-09-01) is demo-wired until then: it confirms but does not deliver.",
     "No testimonials anywhere on the site despite seven named repeat clients.",
     "No careers path on the site despite About copy leaning on training, wellbeing and development — second audience unserved; a client question, not invented content.",
     "No named pre-construction / estimating contact for tender enquiries.",
@@ -356,6 +356,7 @@
     "2026-08-28: all prices removed from /offer/ at the owner's instruction — the page sells the improvements only; commercials to be discussed off-page.",
     "2026-09-01: HSEQ content added to the new site at the owner's instruction — full Health & Safety page copy and four NQA certification badges supplied in chat, placement left to the builder.",
     "2026-09-01: the current-site tab removed at the owner's instruction — /original/ deleted and the demo bar reduced to two tabs, the new site and the offer.",
-    "2026-09-01: photography added at the owner's instruction from their saved copy of the glent.com homepage — FRA01 on the flagship card, FR10x and EEMS02 on the register, the branded operative shot beside the HSEQ copy. The projects video could not be included: the save held only its CDN link."
+    "2026-09-01: photography added at the owner's instruction from their saved copy of the glent.com homepage — FRA01 on the flagship card, FR10x and EEMS02 on the register, the branded operative shot beside the HSEQ copy. The projects video could not be included: the save held only its CDN link.",
+    "2026-09-01: enquiry form and always-visible call/enquiry shortcuts added at the owner's instruction. The form is demo-wired — no delivery — until the enquiry inbox is confirmed."
   ]
 }

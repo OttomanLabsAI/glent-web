@@ -39,4 +39,6 @@ Every fact on the new site traces to `work/brief.json` (source + date seen, all 
 - `/offer/` carries **no prices** at the owner's instruction — it sells the improvements; commercials are discussed off-page.
 - The HSEQ section (`/#hseq`, added 2026-09-01) carries the owner-supplied copy of glent.com's Health & Safety page. The four NQA certification marks there are **inline-SVG recreations** of badge images pasted in chat — the pastes never reached the repo as files — so swap in the official artwork when it is supplied.
 
+- The contact form (`/#contact`, added 2026-09-01) is **demo-wired**: submitting shows a confirmation but nothing is delivered — glent.com's enquiry address could not be read (Cloudflare email obfuscation), so the receiving inbox carries a TO CONFIRM chip. Wire it to the confirmed inbox (or a Worker endpoint) on go-live. Call/enquiry shortcuts float bottom-right on every scroll position.
+
 Open questions for the client are listed in `work/brief.json → questions`.

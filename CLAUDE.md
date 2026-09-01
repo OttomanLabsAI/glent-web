@@ -93,6 +93,11 @@ projects video is not in the repo — the page-save held only its CDN link, and
 the host is blocked from this environment — so ask for the video files before
 adding it.
 
+The contact form is demo-wired: submitting shows a confirmation and delivers
+nothing, because the enquiry inbox is unconfirmed (glent.com obfuscates its
+email addresses). Wire it to the confirmed inbox or a Worker endpoint on
+go-live, and keep its TO CONFIRM chip until that lands.
+
 ## Release ledger
 
 | Version | Title | Description |
@@ -103,3 +108,4 @@ adding it.
 | v1.3 | The safety credentials take their place | The new site now tells the health, safety, environment and quality story — the injury-free goal, the certified integrated management system and its intended outcomes, and the NQA marks for ISO 9001, 14001 and 45001 — set in the same clean style as the rest of the page. |
 | v1.4 | The demo drops the framed original | The pitch is now two tabs — the new site and the offer. The framed view of the current glent.com no longer ships with the demo; it stays in the project's history if it is ever wanted back. |
 | v1.5 | The real sites step into the picture | The demo now shows Glent's own photographs — the Frankfurt flagship from the air beside the headline, two live sites backing the project register, and a Glent crew at work alongside the safety story, which now closes the page. The homepage film waits on its file. |
+| v1.6 | Ways to get in touch, always in reach | The new site now takes enquiries: a proper contact form sits with the offices, and call and enquiry buttons stay in the corner of the screen wherever the page is scrolled. Until the receiving inbox is confirmed, the form is a working preview rather than a live letterbox. |

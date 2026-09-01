@@ -118,7 +118,7 @@ section{padding:64px 20px}
 .band{background:var(--band)}
 .cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));margin-top:28px}
 .card{background:var(--card);border:1px solid var(--line);padding:24px 22px;position:relative;border-radius:4px}
-.card .tag{position:absolute;top:0;right:0;background:var(--deep);color:#fff;
+.card .tag,.enquiry .tag{position:absolute;top:0;right:0;background:var(--deep);color:#fff;
   font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:0 4px 0 4px}
 .card p{font-size:15px;color:var(--muted);margin-bottom:0}
 
@@ -164,6 +164,30 @@ section{padding:64px 20px}
 .office address{font-style:normal;font-size:14.5px;color:var(--muted);margin:10px 0 12px;line-height:1.55}
 .office a.tel{font-weight:600;text-decoration:none;font-size:15px}
 .office a.tel:hover{text-decoration:underline}
+
+/* enquiry form */
+.enquiry{background:var(--card);border:1px solid var(--line);border-radius:4px;position:relative;
+  padding:26px 24px;margin:14px 0 0;scroll-margin-top:64px}
+.enquiry form{display:grid;gap:16px 18px;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+.enquiry form[hidden]{display:none}
+.enquiry .full{grid-column:1/-1}
+.enquiry label{display:block;font:700 11px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:6px}
+.enquiry input,.enquiry textarea{width:100%;background:var(--deep);border:1px solid var(--line);
+  border-radius:3px;color:var(--ink);font:400 15px/1.5 var(--sans);padding:12px}
+.enquiry input:focus-visible,.enquiry textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.enquiry textarea{min-height:130px;resize:vertical}
+.enquiry button.btn{border:0;cursor:pointer}
+.enquiry .note{font-size:12.5px;color:var(--muted);margin:14px 0 0}
+.enquiry .sent{margin:6px 0 0}
+
+/* always-visible contact */
+.contact-fab{position:fixed;right:14px;bottom:14px;z-index:900;display:flex;gap:8px}
+.contact-fab a{display:inline-block;font:700 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;
+  padding:13px 16px;border-radius:999px;text-decoration:none;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+.contact-fab .fab-call{background:var(--deep);color:var(--ink);border:1px solid var(--line)}
+.contact-fab .fab-enq{background:var(--accent);color:#0F3D4B}
+.contact-fab .fab-enq:hover{background:#ff6a24}
 
 /* footer */
 footer{padding:44px 20px 56px;border-top:1px solid var(--line);background:var(--band)}
@@ -222,7 +246,7 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
       <h1>Self-delivered CSA packages<span class="dot">.</span></h1>
       <p class="sub">Groundworks, reinforced concrete, underground services and hard landscaping — for <strong>Data Centre</strong> and <strong>Pharmaceutical</strong> projects, since 2017.</p>
       <div class="actions">
-        <a class="btn" href="#offices">Discuss a project</a>
+        <a class="btn" href="#contact">Discuss a project</a>
         <a class="link-plain" href="#register">See the project register</a>
       </div>
     </div>
@@ -432,6 +456,20 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
         <a class="tel" href="tel:+46844689688">+46 8 446 896 88</a>
       </div>
     </div>
+    <h3 style="margin:38px 0 0">Send an enquiry</h3>
+    <div class="enquiry" id="contact">
+      <span class="tag">Enquiry</span>
+      <form onsubmit="this.hidden=true;document.getElementById('enq-sent').hidden=false;return false">
+        <div><label for="enq-name">Name</label><input id="enq-name" name="name" autocomplete="name" required></div>
+        <div><label for="enq-company">Company</label><input id="enq-company" name="company" autocomplete="organization"></div>
+        <div><label for="enq-email">Email</label><input id="enq-email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="enq-phone">Phone</label><input id="enq-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="full"><label for="enq-msg">Project / enquiry</label><textarea id="enq-msg" name="message" required></textarea></div>
+        <div class="full"><button class="btn" type="submit">Send enquiry</button></div>
+      </form>
+      <p class="sent" id="enq-sent" hidden><strong>Thanks — enquiry noted.</strong> On the live site this lands straight in Glent's inbox; the demo stops here.</p>
+      <p class="note">Demo form — submissions aren't delivered yet. Wired to Glent's enquiry inbox on go-live. <span class="chip">To confirm</span></p>
+    </div>
   </div>
 </section>
 
@@ -511,6 +549,11 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
     </ul>
   </div>
 </section>
+
+<nav class="contact-fab" aria-label="Contact — always available">
+  <a class="fab-call" href="tel:+35316972142">Call Dublin</a>
+  <a class="fab-enq" href="#contact">Enquiry</a>
+</nav>
 
 <footer>
   <div class="wrap">
