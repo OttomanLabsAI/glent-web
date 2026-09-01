@@ -348,7 +348,7 @@
     "Logo and homepage photography now supplied (2026-09-01). Still open: the homepage projects video — the owner's page-save carries only its CDN URL (host blocked from this environment); ask for the .mp4/.webm files to add it.",
     "NQA badge images arrived as chat pastes the tooling could not save to disk — the four marks on /#hseq are inline-SVG recreations. Ask for the official badge files and swap them in.",
     "Team section (2026-09-01): portraits, direct emails, direct dials and personal LinkedIn URLs are all placeholders — only Alan Ferguson's personal LinkedIn is confirmed; the other profile buttons point at the company LinkedIn page, the enquiry form and the London office line. Roles for O'Hagan, Maslin and Kelly come from a single aggregator — confirm before go-live.",
-    "The technology embed (2026-09-01) points at datacentreforge.ottomanlabsai.workers.dev — the subdomain is assumed from the account name, flagged TO CONFIRM on-page; correct it in public/index.html and public/technology/index.html if it differs.",
+    "The technology embed (2026-09-01) points at datacentreforge.cloudflare-passport599.workers.dev — the address as supplied by the owner.",
     "The embedded tool currently sends X-Frame-Options: DENY, so browsers refuse the frame until DataCentreForge ships a frame-ancestors allowance (task queued with the owner). The open-in-its-own-tab links cover the meantime."
   ],
   "questions": [

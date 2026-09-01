@@ -104,10 +104,10 @@ remove or retitle people without the client's answer. The placeholder
 portraits are deliberate until real assets arrive.
 
 The technology section and /technology/ embed the DataCentreForge
-manhole-plan tool live from datacentreforge.ottomanlabsai.workers.dev
-(2026-09-01) — the subdomain is assumed, flagged TO CONFIRM on-page. The
-tool keeps its own dark look inside the Glent frame at the owner's choice;
-do not theme it from this repo. Its headers still send X-Frame-Options:
+manhole-plan tool live from datacentreforge.cloudflare-passport599.workers.dev
+(address owner-supplied, 2026-09-01). The tool keeps its own dark look
+inside the Glent frame at the owner's choice; do not theme it from this
+repo. Its headers still send X-Frame-Options:
 DENY, so the frame stays blank until that repo ships a frame-ancestors
 allowance — keep the open-in-its-own-tab links and the on-page note until
 it does.
@@ -128,3 +128,4 @@ it does.
 | v1.9 | The team row turns its own pages | On a computer the team now moves by arrow buttons at either side instead of a scroller; on a phone it stays a sideways swipe. Same people, same cards — just a cleaner way to leaf through them. |
 | v1.10 | The certificates line up in the middle | The four NQA marks now sit centred beneath the safety story instead of hugging the left edge — a small straightening of the page's closing section. |
 | v1.11 | The drawing board joins the technology story | The technology section now carries the group's own manhole-plan drawing board, served live from its own address so every new release of the tool appears on the demo by itself, and the showcase page gives it the full screen. Until the tool starts admitting frames, a link opens it in its own tab. |
+| v1.12 | The drawing board's address comes good | The technology embeds now point at the tool's real home, supplied by the owner, and the to-confirm flag on the address comes off. The board itself still waits on its framing allowance before it appears inside the page. |
