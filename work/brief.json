@@ -348,7 +348,8 @@
     "Logo and homepage photography now supplied (2026-09-01). Still open: the homepage projects video — the owner's page-save carries only its CDN URL (host blocked from this environment); ask for the .mp4/.webm files to add it.",
     "NQA badge images arrived as chat pastes the tooling could not save to disk — the four marks on /#hseq are inline-SVG recreations. Ask for the official badge files and swap them in.",
     "Team section (2026-09-01): portraits, direct emails, direct dials and personal LinkedIn URLs are all placeholders — only Alan Ferguson's personal LinkedIn is confirmed; the other profile buttons point at the company LinkedIn page, the enquiry form and the London office line. Roles for O'Hagan, Maslin and Kelly come from a single aggregator — confirm before go-live.",
-    "The /technology/ showcase page is an owner-requested placeholder — content to be supplied."
+    "The technology embed (2026-09-01) points at datacentreforge.ottomanlabsai.workers.dev — the subdomain is assumed from the account name, flagged TO CONFIRM on-page; correct it in public/index.html and public/technology/index.html if it differs.",
+    "The embedded tool currently sends X-Frame-Options: DENY, so browsers refuse the frame until DataCentreForge ships a frame-ancestors allowance (task queued with the owner). The open-in-its-own-tab links cover the meantime."
   ],
   "questions": [
     "Confirm the one-line positioning (homepage version used).",
@@ -375,6 +376,7 @@
     "2026-09-01: enquiry form and always-visible call/enquiry shortcuts added at the owner's instruction. The form is demo-wired — no delivery — until the enquiry inbox is confirmed.",
     "2026-09-01: social share thumbnail added at the owner's instruction — the FRA01 aerial behind the Glent lockup and positioning line; Open Graph and Twitter-card tags on both pages.",
     "2026-09-01: page order and sections changed at the owner's instruction — technology section with a showcase placeholder page added after the register, team slider added before HSEQ, and the offices + enquiry section moved to the end of the page.",
-    "2026-09-01: team slider controls changed at the owner's instruction — arrow buttons page the row on desktop, phones keep the sideways swipe, and the scrollbar is hidden."
+    "2026-09-01: team slider controls changed at the owner's instruction — arrow buttons page the row on desktop, phones keep the sideways swipe, and the scrollbar is hidden.",
+    "2026-09-01: the DataCentreForge manhole-plan tool embedded in the technology section and given the full showcase page at the owner's instruction — served live from its own address so each new release appears automatically. Theme left as the tool's own by the owner's choice; only the framing allowance was queued for the tool's repo."
   ]
 }

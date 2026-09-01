@@ -5,7 +5,7 @@ Site-pitch demo for **Glent Group** (glent.com) — a two-tab pitch wired by a d
 | Route | Page |
 |---|---|
 | `/` | The new one-page site — self-delivered CSA packages, Data Centres & Pharma, Europe |
-| `/technology/` | Placeholder for the technology showcase (linked from the homepage button) |
+| `/technology/` | Technology showcase — the DataCentreForge manhole-plan tool, embedded live full-screen |
 | `/offer/` | The offer — tale of the tape, the improvements, terms (no prices, by instruction) |
 
 The current-site tab (`/original/`, their live site in a frame) was removed at
@@ -29,7 +29,7 @@ Shared links unfurl with `public/assets/img/social.jpg` (1200×630; Open Graph +
 
 ## External resources
 
-None. Everything served is local: fonts are self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers, no third-party requests on any route.
+One, by design: the technology section and `/technology/` embed the **DataCentreForge manhole-plan tool** live from `https://datacentreforge.ottomanlabsai.workers.dev/` (subdomain assumed from the account name — flagged TO CONFIRM on-page), so every release of that tool appears on the demo automatically. Note the tool's own headers currently send `X-Frame-Options: DENY`; the frame stays blank until its repo ships a `frame-ancestors` allowance (task queued with the owner) — the open-in-its-own-tab links cover the meantime. Everything else is local: fonts self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers.
 
 ## Facts and integrity
 

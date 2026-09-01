@@ -101,8 +101,16 @@ go-live, and keep its TO CONFIRM chip until that lands.
 The team section's names and roles came from public-profile aggregators
 (2026-09-01); only Alan Ferguson is multi-source confirmed. Do not add,
 remove or retitle people without the client's answer. The placeholder
-portraits and the /technology/ placeholder page are deliberate until real
-assets and content arrive.
+portraits are deliberate until real assets arrive.
+
+The technology section and /technology/ embed the DataCentreForge
+manhole-plan tool live from datacentreforge.ottomanlabsai.workers.dev
+(2026-09-01) — the subdomain is assumed, flagged TO CONFIRM on-page. The
+tool keeps its own dark look inside the Glent frame at the owner's choice;
+do not theme it from this repo. Its headers still send X-Frame-Options:
+DENY, so the frame stays blank until that repo ships a frame-ancestors
+allowance — keep the open-in-its-own-tab links and the on-page note until
+it does.
 
 ## Release ledger
 
@@ -119,3 +127,4 @@ assets and content arrive.
 | v1.8 | The people step forward, contact closes the page | The demo now introduces the group's leadership in a sliding row of profiles — names, roles and ways to reach each of them, portraits to follow — adds a technology section with its own showcase page held by a placeholder, and moves the enquiry desk to the very end, so the page finishes where a conversation starts. |
 | v1.9 | The team row turns its own pages | On a computer the team now moves by arrow buttons at either side instead of a scroller; on a phone it stays a sideways swipe. Same people, same cards — just a cleaner way to leaf through them. |
 | v1.10 | The certificates line up in the middle | The four NQA marks now sit centred beneath the safety story instead of hugging the left edge — a small straightening of the page's closing section. |
+| v1.11 | The drawing board joins the technology story | The technology section now carries the group's own manhole-plan drawing board, served live from its own address so every new release of the tool appears on the demo by itself, and the showcase page gives it the full screen. Until the tool starts admitting frames, a link opens it in its own tab. |
