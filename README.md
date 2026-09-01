@@ -24,6 +24,8 @@ npm run check        # wrangler deploy --dry-run
 
 Connect the repo in the Cloudflare dashboard (Workers & Pages → Create → Import a repository). Every push to `main` then deploys to production. This is a pitch demo: `robots.txt` disallows all, every page carries `noindex,nofollow`, and `_headers` adds `X-Robots-Tag` — it must never reach a search index.
 
+Shared links unfurl with `public/assets/img/social.jpg` (1200×630; Open Graph + Twitter-card tags on both pages). `og:image` is a **relative** URL — most scrapers resolve it against the page URL, but set it to the full absolute URL once the production domain is fixed.
+
 ## External resources
 
 None. Everything served is local: fonts are self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers, no third-party requests on any route.
