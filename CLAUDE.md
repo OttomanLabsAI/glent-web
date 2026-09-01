@@ -104,14 +104,12 @@ The team section's names and roles came from public-profile aggregators
 remove or retitle people without the client's answer. The placeholder
 portraits are deliberate until real assets arrive.
 
-The technology section and /technology/ embed the DataCentreForge
-manhole-plan tool live from datacentreforge.cloudflare-passport599.workers.dev
-(address owner-supplied, 2026-09-01). The tool keeps its own dark look
-inside the Glent frame at the owner's choice; do not theme it from this
-repo. Its headers still send X-Frame-Options:
-DENY, so the frame stays blank until that repo ships a frame-ancestors
-allowance — keep the open-in-its-own-tab links and the on-page note until
-it does.
+The technology section's showcase button opens the DataCentreForge
+manhole-plan tool in a new tab at
+datacentreforge.cloudflare-passport599.workers.dev (address owner-supplied,
+2026-09-01). The embed and the /technology/ page were removed at the
+owner's instruction the same day — do not reintroduce an iframe of the
+tool without being asked; the plain link is the deliberate design.
 
 ## Release ledger
 
@@ -134,3 +132,4 @@ it does.
 | v1.14 | Thirteen project sheets land on the register | Thirteen of the fifteen projects now open onto their real sheets — values from €1.2m to €43m, the packages delivered and the story of each job, from the Frankfurt flagship to the Bristol Myers Squibb therapy centre. Two sheets remain to come. |
 | v1.15 | The offer becomes the improvements, said quicker | The second tab now calls itself what it is — the improvements — at an address to match, and its talking points are cut to the bone: the same comparisons and guarantees in half the words. |
 | v1.16 | The register keeps one sheet open at a time | Opening a project now closes the one before it, so the register reads like leafing through a folder of sheets rather than unrolling the whole drawer at once. |
+| v1.17 | The showcase steps out to its own tab | The technology section no longer tries to hold the drawing board inside the page — the showcase button simply opens the live tool in its own tab, where it always runs the latest release. The waiting frame and its holding page are gone. |

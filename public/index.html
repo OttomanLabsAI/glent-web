@@ -178,16 +178,6 @@ section{padding:64px 20px}
 .row-detail dd{margin:0}
 .row-detail .thin{color:var(--muted);font-size:14px;margin:0;align-self:center}
 
-/* live tool embed */
-.embed{margin-top:30px;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--deep)}
-.embed-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
-  padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
-.embed-bar b{font:700 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
-.embed-bar a{font:600 12.5px/1.4 var(--sans);color:var(--muted)}
-.embed-bar a:hover{color:var(--ink)}
-.embed iframe{display:block;width:100%;height:min(72vh,640px);border:0;background:#0e1116}
-.embed-note{font-size:12.5px;color:var(--muted);margin:12px 0 0;max-width:75ch}
-
 /* team slider — arrow buttons page it on desktop, swipe on mobile */
 .team-wrap{position:relative}
 .team-track{display:grid;grid-auto-flow:column;grid-auto-columns:min(300px,80vw);gap:16px;
@@ -615,16 +605,9 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
     <h2>Model first, ground second</h2>
     <p style="color:var(--muted)">Every package starts digital — BIM modelling, preconstruction planning, underground services co-ordination, temporary works design and waterproofing detailing, all resolved in the model before a bucket touches the ground.</p>
     <div class="actions" style="margin-top:26px">
-      <a class="btn" href="/technology/">Technology showcase</a>
+      <a class="btn" href="https://datacentreforge.cloudflare-passport599.workers.dev/" target="_blank" rel="noopener">Technology showcase</a>
+      <span style="font-size:13px;color:var(--muted)">Opens the live manhole-plan drawing board in its own tab — always the latest release.</span>
     </div>
-    <div class="embed">
-      <div class="embed-bar">
-        <b>Manhole plan — live drawing board</b>
-        <a href="https://datacentreforge.cloudflare-passport599.workers.dev/" target="_blank" rel="noopener">Open it in its own tab ↗</a>
-      </div>
-      <iframe src="https://datacentreforge.cloudflare-passport599.workers.dev/" title="Manhole plan — the group's chamber and conduit drawing board, live" loading="lazy"></iframe>
-    </div>
-    <p class="embed-note">Embedded straight from the tool's own address, so every new release appears here the moment it ships. If the board doesn't render, its framing allowance hasn't gone live yet — use the open-in-its-own-tab link.</p>
   </div>
 </section>
 

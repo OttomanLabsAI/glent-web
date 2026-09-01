@@ -5,7 +5,6 @@ Site-pitch demo for **Glent Group** (glent.com) — a two-tab pitch wired by a d
 | Route | Page |
 |---|---|
 | `/` | The new one-page site — self-delivered CSA packages, Data Centres & Pharma, Europe |
-| `/technology/` | Technology showcase — the DataCentreForge manhole-plan tool, embedded live full-screen |
 | `/improvements/` | The improvements — tale of the tape and what changes (no prices, by instruction) |
 
 The current-site tab (`/original/`, their live site in a frame) was removed at
@@ -29,7 +28,7 @@ Shared links unfurl with `public/assets/img/social.jpg` (1200×630; Open Graph +
 
 ## External resources
 
-One, by design: the technology section and `/technology/` embed the **DataCentreForge manhole-plan tool** live from `https://datacentreforge.cloudflare-passport599.workers.dev/` (address supplied by the owner, 2026-09-01), so every release of that tool appears on the demo automatically. Note the tool's own headers currently send `X-Frame-Options: DENY`; the frame stays blank until its repo ships a `frame-ancestors` allowance (task queued with the owner) — the open-in-its-own-tab links cover the meantime. Everything else is local: fonts self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers.
+None served. Everything on the pages is local: fonts self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers, no third-party requests. The technology section's **Technology showcase** button links out (new tab) to the DataCentreForge manhole-plan tool at `https://datacentreforge.cloudflare-passport599.workers.dev/` — a plain link, not an embed, so visitors always land on that tool's latest release.
 
 ## Facts and integrity
 
