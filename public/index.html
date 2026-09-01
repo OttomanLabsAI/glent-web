@@ -62,7 +62,7 @@ section{padding:64px 20px}
 .site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
 .site-head{padding:0 20px}
 .brand img{display:block;height:34px;width:auto}
-.site-nav{display:flex;gap:26px}
+.site-nav{display:flex;gap:6px 26px;flex-wrap:wrap;justify-content:flex-end}
 .site-nav a{color:var(--ink);text-decoration:none}
 .site-nav a:hover{color:var(--accent)}
 @media (max-width:599px){.site-nav{display:none}}
@@ -141,6 +141,7 @@ section{padding:64px 20px}
 .hseq-cols img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--line)}
 
 /* hseq / certifications */
+.hseq{border-top:1px solid var(--line)}
 .hseq strong{color:var(--accent)}
 .certs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(120px,100%),1fr));max-width:640px;margin:30px 0 0}
 .certs svg{display:block;width:100%;height:auto;border-radius:3px}
@@ -165,6 +166,29 @@ section{padding:64px 20px}
 .clients-line{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);
   font-size:15px;color:var(--muted)}
 .clients-line strong{color:var(--ink)}
+
+/* team slider */
+.team-track{display:grid;grid-auto-flow:column;grid-auto-columns:min(300px,80vw);gap:16px;
+  overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 4px 18px;
+  scrollbar-color:var(--accent) var(--band)}
+.team-track::-webkit-scrollbar{height:8px}
+.team-track::-webkit-scrollbar-track{background:var(--band);border-radius:4px}
+.team-track::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px}
+.profile{scroll-snap-align:start;background:var(--card);border:1px solid var(--line);
+  border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.profile .ph{position:relative;background:var(--deep)}
+.profile .ph svg{display:block;width:100%;height:auto}
+.profile .ph .to-come{position:absolute;left:12px;bottom:10px;font:700 9.5px/1 var(--mono);
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.profile .body{padding:18px 18px 20px}
+.profile h3{margin:0 0 2px;font-size:1.15rem}
+.profile .role{font:700 11px/1.6 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 14px}
+.pbtns{display:flex;gap:8px;flex-wrap:wrap}
+.pbtns a{font:700 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);
+  text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 13px}
+.pbtns a:hover{border-color:var(--accent);color:var(--accent)}
+.team-note{font-size:12.5px;color:var(--muted);margin:8px 0 0}
 
 /* offices */
 .office h3{margin-bottom:6px}
@@ -241,8 +265,10 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
     <nav class="site-nav caps" aria-label="Sections">
       <a href="#packages">Services</a>
       <a href="#register">Projects</a>
-      <a href="#offices">Contact</a>
+      <a href="#technology">Technology</a>
+      <a href="#team">Team</a>
       <a href="#hseq">HSEQ</a>
+      <a href="#offices">Contact</a>
     </nav>
   </div>
 </div>
@@ -428,56 +454,101 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
   </div>
 </section>
 
-<section class="band" id="offices">
+<section class="band" id="technology">
   <div class="wrap">
-    <p class="kicker">Discuss a project</p>
-    <h2>Six offices across Europe</h2>
-    <div class="cards">
-      <div class="card office"><span class="tag">IE</span>
-        <h3>Ireland</h3><p class="entity">Glent Civil Engineering Ltd</p>
-        <address>3rd Floor, Ulysses House, Foley Street, Dublin 1, D01&nbsp;W2T2</address>
-        <a class="tel" href="tel:+35316972142">+353 1 697 2142</a>
-      </div>
-      <div class="card office"><span class="tag">DE</span>
-        <h3>Germany</h3><p class="entity">Glent GmbH</p>
-        <address>Kasinostr. 19–21, 42103 Wuppertal</address>
-        <a class="tel" href="tel:+4920294709171">+49 202 947 09171</a>
-      </div>
-      <div class="card office"><span class="tag">NL</span>
-        <h3>Netherlands</h3><p class="entity">Glent B.V.</p>
-        <address>Goeman Borgesiuslaan 77, 3515&nbsp;ET Utrecht</address>
-        <a class="tel" href="tel:+31208080175">+31 20 808 0175</a>
-      </div>
-      <div class="card office"><span class="tag">DK</span>
-        <h3>Denmark</h3><p class="entity">Glent ApS</p>
-        <address>c/o BDO, Havneholmen 29, DK-1561 Copenhagen V</address>
-        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a> <span class="chip">To confirm</span>
-      </div>
-      <div class="card office"><span class="tag">UK</span>
-        <h3>United Kingdom</h3><p class="entity">Glent Engineering Ltd</p>
-        <address>50–52 Wharf Road, London N1&nbsp;7EU</address>
-        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a>
-      </div>
-      <div class="card office"><span class="tag">SE</span>
-        <h3>Sweden</h3><p class="entity">Glent Sweden AB</p>
-        <address>c/o Moore KLN AB, Lilla Bommen 3B, 411&nbsp;04 Göteborg</address>
-        <a class="tel" href="tel:+46844689688">+46 8 446 896 88</a>
-      </div>
+    <p class="kicker">Technology</p>
+    <h2>Model first, ground second</h2>
+    <p style="color:var(--muted)">Every package starts digital — BIM modelling, preconstruction planning, underground services co-ordination, temporary works design and waterproofing detailing, all resolved in the model before a bucket touches the ground.</p>
+    <div class="actions" style="margin-top:26px">
+      <a class="btn" href="/technology/">Technology showcase</a>
     </div>
-    <h3 style="margin:38px 0 0">Send an enquiry</h3>
-    <div class="enquiry" id="contact">
-      <span class="tag">Enquiry</span>
-      <form onsubmit="this.hidden=true;document.getElementById('enq-sent').hidden=false;return false">
-        <div><label for="enq-name">Name</label><input id="enq-name" name="name" autocomplete="name" required></div>
-        <div><label for="enq-company">Company</label><input id="enq-company" name="company" autocomplete="organization"></div>
-        <div><label for="enq-email">Email</label><input id="enq-email" name="email" type="email" autocomplete="email" required></div>
-        <div><label for="enq-phone">Phone</label><input id="enq-phone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="full"><label for="enq-msg">Project / enquiry</label><textarea id="enq-msg" name="message" required></textarea></div>
-        <div class="full"><button class="btn" type="submit">Send enquiry</button></div>
-      </form>
-      <p class="sent" id="enq-sent" hidden><strong>Thanks — enquiry noted.</strong> On the live site this lands straight in Glent's inbox; the demo stops here.</p>
-      <p class="note">Demo form — submissions aren't delivered yet. Wired to Glent's enquiry inbox on go-live. <span class="chip">To confirm</span></p>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <p class="kicker">The people</p>
+    <h2>The team behind the packages</h2>
+    <p style="color:var(--muted)">Slide through the group leads. The demo ships with placeholder portraits until the photo set arrives.</p>
+    <div class="team-track" aria-label="Team profiles — scroll sideways">
+      <article class="profile">
+        <div class="ph">
+          <svg viewBox="0 0 300 225" role="img" aria-label="Placeholder portrait — Alan Ferguson">
+            <rect width="300" height="225" fill="#08222A"/>
+            <circle cx="150" cy="86" r="36" fill="#14485A"/>
+            <path d="M150 132c-42 0-70 24-76 60l-1 33h154l-1-33c-6-36-34-60-76-60z" fill="#14485A"/>
+          </svg>
+          <span class="to-come">Portrait to follow</span>
+        </div>
+        <div class="body">
+          <h3>Alan Ferguson</h3>
+          <p class="role">Managing Director</p>
+          <div class="pbtns">
+            <a href="https://www.linkedin.com/in/alan-ferguson-4a217752/" rel="noopener nofollow" target="_blank">LinkedIn</a>
+            <a href="#contact" title="Direct email to be confirmed — routes to the enquiry form">Email</a>
+            <a href="tel:+442045991174" title="Via the London office — direct dials to follow">Phone</a>
+          </div>
+        </div>
+      </article>
+      <article class="profile">
+        <div class="ph">
+          <svg viewBox="0 0 300 225" role="img" aria-label="Placeholder portrait — Danny O'Hagan">
+            <rect width="300" height="225" fill="#08222A"/>
+            <circle cx="150" cy="86" r="36" fill="#14485A"/>
+            <path d="M150 132c-42 0-70 24-76 60l-1 33h154l-1-33c-6-36-34-60-76-60z" fill="#14485A"/>
+          </svg>
+          <span class="to-come">Portrait to follow</span>
+        </div>
+        <div class="body">
+          <h3>Danny O'Hagan</h3>
+          <p class="role">Group Finance Director</p>
+          <div class="pbtns">
+            <a href="https://uk.linkedin.com/company/glent-group" rel="noopener nofollow" target="_blank" title="Personal profile to be confirmed — company page for now">LinkedIn</a>
+            <a href="#contact" title="Direct email to be confirmed — routes to the enquiry form">Email</a>
+            <a href="tel:+442045991174" title="Via the London office — direct dials to follow">Phone</a>
+          </div>
+        </div>
+      </article>
+      <article class="profile">
+        <div class="ph">
+          <svg viewBox="0 0 300 225" role="img" aria-label="Placeholder portrait — Paul Maslin">
+            <rect width="300" height="225" fill="#08222A"/>
+            <circle cx="150" cy="86" r="36" fill="#14485A"/>
+            <path d="M150 132c-42 0-70 24-76 60l-1 33h154l-1-33c-6-36-34-60-76-60z" fill="#14485A"/>
+          </svg>
+          <span class="to-come">Portrait to follow</span>
+        </div>
+        <div class="body">
+          <h3>Paul Maslin</h3>
+          <p class="role">Group HSEQ Director</p>
+          <div class="pbtns">
+            <a href="https://uk.linkedin.com/company/glent-group" rel="noopener nofollow" target="_blank" title="Personal profile to be confirmed — company page for now">LinkedIn</a>
+            <a href="#contact" title="Direct email to be confirmed — routes to the enquiry form">Email</a>
+            <a href="tel:+442045991174" title="Via the London office — direct dials to follow">Phone</a>
+          </div>
+        </div>
+      </article>
+      <article class="profile">
+        <div class="ph">
+          <svg viewBox="0 0 300 225" role="img" aria-label="Placeholder portrait — Jeff Kelly">
+            <rect width="300" height="225" fill="#08222A"/>
+            <circle cx="150" cy="86" r="36" fill="#14485A"/>
+            <path d="M150 132c-42 0-70 24-76 60l-1 33h154l-1-33c-6-36-34-60-76-60z" fill="#14485A"/>
+          </svg>
+          <span class="to-come">Portrait to follow</span>
+        </div>
+        <div class="body">
+          <h3>Jeff Kelly</h3>
+          <p class="role">Group Commercial Manager</p>
+          <div class="pbtns">
+            <a href="https://uk.linkedin.com/company/glent-group" rel="noopener nofollow" target="_blank" title="Personal profile to be confirmed — company page for now">LinkedIn</a>
+            <a href="#contact" title="Direct email to be confirmed — routes to the enquiry form">Email</a>
+            <a href="tel:+442045991174" title="Via the London office — direct dials to follow">Phone</a>
+          </div>
+        </div>
+      </article>
     </div>
+    <p class="team-note">Names and roles read from Glent's public profiles — to be confirmed with the client. Portraits, direct emails, dials and personal LinkedIn links to follow. <span class="chip">To confirm</span></p>
   </div>
 </section>
 
@@ -555,6 +626,59 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
       <li>The system integrated into the group's business processes</li>
       <li>Impacts to the environment and community minimised</li>
     </ul>
+  </div>
+</section>
+
+<section class="band" id="offices">
+  <div class="wrap">
+    <p class="kicker">Discuss a project</p>
+    <h2>Six offices across Europe</h2>
+    <div class="cards">
+      <div class="card office"><span class="tag">IE</span>
+        <h3>Ireland</h3><p class="entity">Glent Civil Engineering Ltd</p>
+        <address>3rd Floor, Ulysses House, Foley Street, Dublin 1, D01&nbsp;W2T2</address>
+        <a class="tel" href="tel:+35316972142">+353 1 697 2142</a>
+      </div>
+      <div class="card office"><span class="tag">DE</span>
+        <h3>Germany</h3><p class="entity">Glent GmbH</p>
+        <address>Kasinostr. 19–21, 42103 Wuppertal</address>
+        <a class="tel" href="tel:+4920294709171">+49 202 947 09171</a>
+      </div>
+      <div class="card office"><span class="tag">NL</span>
+        <h3>Netherlands</h3><p class="entity">Glent B.V.</p>
+        <address>Goeman Borgesiuslaan 77, 3515&nbsp;ET Utrecht</address>
+        <a class="tel" href="tel:+31208080175">+31 20 808 0175</a>
+      </div>
+      <div class="card office"><span class="tag">DK</span>
+        <h3>Denmark</h3><p class="entity">Glent ApS</p>
+        <address>c/o BDO, Havneholmen 29, DK-1561 Copenhagen V</address>
+        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a> <span class="chip">To confirm</span>
+      </div>
+      <div class="card office"><span class="tag">UK</span>
+        <h3>United Kingdom</h3><p class="entity">Glent Engineering Ltd</p>
+        <address>50–52 Wharf Road, London N1&nbsp;7EU</address>
+        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a>
+      </div>
+      <div class="card office"><span class="tag">SE</span>
+        <h3>Sweden</h3><p class="entity">Glent Sweden AB</p>
+        <address>c/o Moore KLN AB, Lilla Bommen 3B, 411&nbsp;04 Göteborg</address>
+        <a class="tel" href="tel:+46844689688">+46 8 446 896 88</a>
+      </div>
+    </div>
+    <h3 style="margin:38px 0 0">Send an enquiry</h3>
+    <div class="enquiry" id="contact">
+      <span class="tag">Enquiry</span>
+      <form onsubmit="this.hidden=true;document.getElementById('enq-sent').hidden=false;return false">
+        <div><label for="enq-name">Name</label><input id="enq-name" name="name" autocomplete="name" required></div>
+        <div><label for="enq-company">Company</label><input id="enq-company" name="company" autocomplete="organization"></div>
+        <div><label for="enq-email">Email</label><input id="enq-email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="enq-phone">Phone</label><input id="enq-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="full"><label for="enq-msg">Project / enquiry</label><textarea id="enq-msg" name="message" required></textarea></div>
+        <div class="full"><button class="btn" type="submit">Send enquiry</button></div>
+      </form>
+      <p class="sent" id="enq-sent" hidden><strong>Thanks — enquiry noted.</strong> On the live site this lands straight in Glent's inbox; the demo stops here.</p>
+      <p class="note">Demo form — submissions aren't delivered yet. Wired to Glent's enquiry inbox on go-live. <span class="chip">To confirm</span></p>
+    </div>
   </div>
 </section>
 

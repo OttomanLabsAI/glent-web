@@ -98,6 +98,12 @@ nothing, because the enquiry inbox is unconfirmed (glent.com obfuscates its
 email addresses). Wire it to the confirmed inbox or a Worker endpoint on
 go-live, and keep its TO CONFIRM chip until that lands.
 
+The team section's names and roles came from public-profile aggregators
+(2026-09-01); only Alan Ferguson is multi-source confirmed. Do not add,
+remove or retitle people without the client's answer. The placeholder
+portraits and the /technology/ placeholder page are deliberate until real
+assets and content arrive.
+
 ## Release ledger
 
 | Version | Title | Description |
@@ -110,3 +116,4 @@ go-live, and keep its TO CONFIRM chip until that lands.
 | v1.5 | The real sites step into the picture | The demo now shows Glent's own photographs — the Frankfurt flagship from the air beside the headline, two live sites backing the project register, and a Glent crew at work alongside the safety story, which now closes the page. The homepage film waits on its file. |
 | v1.6 | Ways to get in touch, always in reach | The new site now takes enquiries: a proper contact form sits with the offices, and call and enquiry buttons stay in the corner of the screen wherever the page is scrolled. Until the receiving inbox is confirmed, the form is a working preview rather than a live letterbox. |
 | v1.7 | A proper face for shared links | When the demo's address is sent by message or posted anywhere, it now unfurls as its own card — the Frankfurt flagship from the air behind the Glent mark and the one-line pitch — instead of a bare link. |
+| v1.8 | The people step forward, contact closes the page | The demo now introduces the group's leadership in a sliding row of profiles — names, roles and ways to reach each of them, portraits to follow — adds a technology section with its own showcase page held by a placeholder, and moves the enquiry desk to the very end, so the page finishes where a conversation starts. |
