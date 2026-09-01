@@ -122,8 +122,17 @@ section{padding:64px 20px}
   font:700 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:0 4px 0 4px}
 .card p{font-size:15px;color:var(--muted);margin-bottom:0}
 
+/* photography */
+.spec .photo{margin:-26px -24px 20px;overflow:hidden;border-bottom:1px solid var(--line);border-radius:3px 3px 0 0}
+.spec .photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.shots{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));margin:28px 0 6px}
+.shots figure{margin:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--card)}
+.shots img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.shots figcaption{padding:10px 14px;font:700 10.5px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hseq-cols{display:grid;gap:36px 44px;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));align-items:center}
+.hseq-cols img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--line)}
+
 /* hseq / certifications */
-.hseq{border-bottom:1px solid var(--line)}
 .hseq strong{color:var(--accent)}
 .certs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(120px,100%),1fr));max-width:640px;margin:30px 0 0}
 .certs svg{display:block;width:100%;height:auto;border-radius:3px}
@@ -200,8 +209,8 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
     <nav class="site-nav caps" aria-label="Sections">
       <a href="#packages">Services</a>
       <a href="#register">Projects</a>
-      <a href="#hseq">HSEQ</a>
       <a href="#offices">Contact</a>
+      <a href="#hseq">HSEQ</a>
     </nav>
   </div>
 </div>
@@ -218,6 +227,7 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
       </div>
     </div>
     <div class="spec">
+      <div class="photo"><img src="/assets/img/fra01.jpg" width="1400" height="933" alt="Aerial view of the FRA01 site in Frankfurt — basement excavation and raft slab works under tower cranes"></div>
       <span class="tag">Largest package to date</span>
       <p class="kicker" style="margin-bottom:6px">FRA01 · Frankfurt</p>
       <div class="big">€43m</div>
@@ -350,12 +360,92 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
   </div>
 </section>
 
+<section id="register">
+  <div class="wrap">
+    <p class="kicker">Projects delivered</p>
+    <h2>The project register</h2>
+    <div class="shots">
+      <figure>
+        <img src="/assets/img/fr10x.jpg" width="1400" height="933" loading="lazy" alt="FR10x, Frankfurt — reinforced concrete frame, cores and suspended slabs rising under tower cranes">
+        <figcaption>FR10X — Frankfurt · Germany</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/img/eems02.jpg" width="1400" height="933" loading="lazy" alt="EEMS02 — piling rigs and groundworks on the winter site among the Eemshaven wind turbines">
+        <figcaption>EEMS02 — Groningen · Netherlands</figcaption>
+      </figure>
+    </div>
+    <div class="register">
+      <div class="row head"><span>Project</span><span>For</span><span class="loc">Location</span></div>
+      <div class="row"><span class="code">FRA01</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
+      <div class="row"><span class="code">DUB 4 &amp; DUB 5</span><span class="client">Winthrop Technologies</span><span class="loc">Dublin · Ireland</span></div>
+      <div class="row"><span class="code">EEMS02</span><span class="client">Mercury Engineering</span><span class="loc">Groningen · Netherlands</span></div>
+      <div class="row"><span class="code">FR10x</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
+      <div class="row"><span class="code">AMS01</span><span class="client">Mercury Engineering</span><span class="loc">Amsterdam · Netherlands</span></div>
+      <div class="row"><span class="code">LEIDEN EXTERNALS</span><span class="client">SISK</span><span class="loc">Leiden · Netherlands</span></div>
+      <div class="row"><span class="code">BMS CAR T CENTRE</span><span class="client">DPS Global</span><span class="loc">Leiden · Netherlands</span></div>
+      <div class="row"><span class="code">IRON MOUNTAIN FRA01</span><span class="client">Collen</span><span class="loc">Frankfurt · Germany</span></div>
+      <div class="row"><span class="code">VANTAGE BER11–14</span><span class="client">Mercury Engineering</span><span class="loc">Berlin · Germany</span></div>
+      <div class="row"><span class="code">GOOGLE GRQ3–4 ENABLING</span><span class="client">Yondr</span><span class="loc">Eemshaven · Netherlands</span></div>
+      <div class="row"><span class="code">GOOGLE GRQ3</span><span class="client">BAM</span><span class="loc">Eemshaven · Netherlands</span></div>
+      <div class="row"><span class="code">GOOGLE GRQ3 &amp; GRQ4</span><span class="client">Fluor</span><span class="loc">Eemshaven · Netherlands</span></div>
+      <div class="row"><span class="code">FACEBOOK ODN1 &amp; ODN2</span><span class="client">Blu-3</span><span class="loc">Odense · Denmark</span></div>
+      <div class="row"><span class="code">EDGECONNEX AMS06</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
+      <div class="row"><span class="code">EDGECONNEX AMS05</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
+    </div>
+    <p class="clients-line">Client base includes <strong>Winthrop, Mercury, Yondr, Sisk, Collen, Fluor and NTT Global Data Centres</strong> — the majority of work won through repeat business.</p>
+  </div>
+</section>
+
+<section class="band" id="offices">
+  <div class="wrap">
+    <p class="kicker">Discuss a project</p>
+    <h2>Six offices across Europe</h2>
+    <div class="cards">
+      <div class="card office"><span class="tag">IE</span>
+        <h3>Ireland</h3><p class="entity">Glent Civil Engineering Ltd</p>
+        <address>3rd Floor, Ulysses House, Foley Street, Dublin 1, D01&nbsp;W2T2</address>
+        <a class="tel" href="tel:+35316972142">+353 1 697 2142</a>
+      </div>
+      <div class="card office"><span class="tag">DE</span>
+        <h3>Germany</h3><p class="entity">Glent GmbH</p>
+        <address>Kasinostr. 19–21, 42103 Wuppertal</address>
+        <a class="tel" href="tel:+4920294709171">+49 202 947 09171</a>
+      </div>
+      <div class="card office"><span class="tag">NL</span>
+        <h3>Netherlands</h3><p class="entity">Glent B.V.</p>
+        <address>Goeman Borgesiuslaan 77, 3515&nbsp;ET Utrecht</address>
+        <a class="tel" href="tel:+31208080175">+31 20 808 0175</a>
+      </div>
+      <div class="card office"><span class="tag">DK</span>
+        <h3>Denmark</h3><p class="entity">Glent ApS</p>
+        <address>c/o BDO, Havneholmen 29, DK-1561 Copenhagen V</address>
+        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a> <span class="chip">To confirm</span>
+      </div>
+      <div class="card office"><span class="tag">UK</span>
+        <h3>United Kingdom</h3><p class="entity">Glent Engineering Ltd</p>
+        <address>50–52 Wharf Road, London N1&nbsp;7EU</address>
+        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a>
+      </div>
+      <div class="card office"><span class="tag">SE</span>
+        <h3>Sweden</h3><p class="entity">Glent Sweden AB</p>
+        <address>c/o Moore KLN AB, Lilla Bommen 3B, 411&nbsp;04 Göteborg</address>
+        <a class="tel" href="tel:+46844689688">+46 8 446 896 88</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="hseq" id="hseq">
   <div class="wrap">
     <p class="kicker">Health · Safety · Environment · Quality</p>
     <h2>Working to the highest standards</h2>
-    <p style="color:var(--muted)">The primary goal is construction-industry-leading occupational health and safety performance and wellbeing — which ultimately means <strong>an injury-free workplace</strong>.</p>
-    <p style="color:var(--muted)">Glent Group operates and maintains accreditation to an NQA-certified Integrated Management System. ISO&nbsp;9001:2015, ISO&nbsp;14001:2015 and ISO&nbsp;45001:2018 share the same high-level structure, so one set of manuals and procedures carries all three — with document and records control, internal audits, and corrective and preventive action required throughout.</p>
+    <div class="hseq-cols">
+      <div>
+        <p style="color:var(--muted)">The primary goal is construction-industry-leading occupational health and safety performance and wellbeing — which ultimately means <strong>an injury-free workplace</strong>.</p>
+        <p style="color:var(--muted);margin-bottom:0">Glent Group operates and maintains accreditation to an NQA-certified Integrated Management System. ISO&nbsp;9001:2015, ISO&nbsp;14001:2015 and ISO&nbsp;45001:2018 share the same high-level structure, so one set of manuals and procedures carries all three — with document and records control, internal audits, and corrective and preventive action required throughout.</p>
+      </div>
+      <img src="/assets/img/on-site.jpg" width="1200" height="900" loading="lazy" alt="Glent operative in branded PPE overlooking a sheet-piled excavation, with the site team working below">
+    </div>
     <div class="certs" role="group" aria-label="NQA certification marks">
       <svg viewBox="0 0 200 300" role="img" aria-labelledby="cert-ims-t">
         <title id="cert-ims-t">NQA certification mark — ISO 9001, ISO 14001 and ISO 45001 Integrated Management</title>
@@ -419,71 +509,6 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
       <li>The system integrated into the group's business processes</li>
       <li>Impacts to the environment and community minimised</li>
     </ul>
-  </div>
-</section>
-
-<section id="register">
-  <div class="wrap">
-    <p class="kicker">Projects delivered</p>
-    <h2>The project register</h2>
-    <div class="register">
-      <div class="row head"><span>Project</span><span>For</span><span class="loc">Location</span></div>
-      <div class="row"><span class="code">FRA01</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
-      <div class="row"><span class="code">DUB 4 &amp; DUB 5</span><span class="client">Winthrop Technologies</span><span class="loc">Dublin · Ireland</span></div>
-      <div class="row"><span class="code">EEMS02</span><span class="client">Mercury Engineering</span><span class="loc">Groningen · Netherlands</span></div>
-      <div class="row"><span class="code">FR10x</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
-      <div class="row"><span class="code">AMS01</span><span class="client">Mercury Engineering</span><span class="loc">Amsterdam · Netherlands</span></div>
-      <div class="row"><span class="code">LEIDEN EXTERNALS</span><span class="client">SISK</span><span class="loc">Leiden · Netherlands</span></div>
-      <div class="row"><span class="code">BMS CAR T CENTRE</span><span class="client">DPS Global</span><span class="loc">Leiden · Netherlands</span></div>
-      <div class="row"><span class="code">IRON MOUNTAIN FRA01</span><span class="client">Collen</span><span class="loc">Frankfurt · Germany</span></div>
-      <div class="row"><span class="code">VANTAGE BER11–14</span><span class="client">Mercury Engineering</span><span class="loc">Berlin · Germany</span></div>
-      <div class="row"><span class="code">GOOGLE GRQ3–4 ENABLING</span><span class="client">Yondr</span><span class="loc">Eemshaven · Netherlands</span></div>
-      <div class="row"><span class="code">GOOGLE GRQ3</span><span class="client">BAM</span><span class="loc">Eemshaven · Netherlands</span></div>
-      <div class="row"><span class="code">GOOGLE GRQ3 &amp; GRQ4</span><span class="client">Fluor</span><span class="loc">Eemshaven · Netherlands</span></div>
-      <div class="row"><span class="code">FACEBOOK ODN1 &amp; ODN2</span><span class="client">Blu-3</span><span class="loc">Odense · Denmark</span></div>
-      <div class="row"><span class="code">EDGECONNEX AMS06</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
-      <div class="row"><span class="code">EDGECONNEX AMS05</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
-    </div>
-    <p class="clients-line">Client base includes <strong>Winthrop, Mercury, Yondr, Sisk, Collen, Fluor and NTT Global Data Centres</strong> — the majority of work won through repeat business.</p>
-  </div>
-</section>
-
-<section class="band" id="offices">
-  <div class="wrap">
-    <p class="kicker">Discuss a project</p>
-    <h2>Six offices across Europe</h2>
-    <div class="cards">
-      <div class="card office"><span class="tag">IE</span>
-        <h3>Ireland</h3><p class="entity">Glent Civil Engineering Ltd</p>
-        <address>3rd Floor, Ulysses House, Foley Street, Dublin 1, D01&nbsp;W2T2</address>
-        <a class="tel" href="tel:+35316972142">+353 1 697 2142</a>
-      </div>
-      <div class="card office"><span class="tag">DE</span>
-        <h3>Germany</h3><p class="entity">Glent GmbH</p>
-        <address>Kasinostr. 19–21, 42103 Wuppertal</address>
-        <a class="tel" href="tel:+4920294709171">+49 202 947 09171</a>
-      </div>
-      <div class="card office"><span class="tag">NL</span>
-        <h3>Netherlands</h3><p class="entity">Glent B.V.</p>
-        <address>Goeman Borgesiuslaan 77, 3515&nbsp;ET Utrecht</address>
-        <a class="tel" href="tel:+31208080175">+31 20 808 0175</a>
-      </div>
-      <div class="card office"><span class="tag">DK</span>
-        <h3>Denmark</h3><p class="entity">Glent ApS</p>
-        <address>c/o BDO, Havneholmen 29, DK-1561 Copenhagen V</address>
-        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a> <span class="chip">To confirm</span>
-      </div>
-      <div class="card office"><span class="tag">UK</span>
-        <h3>United Kingdom</h3><p class="entity">Glent Engineering Ltd</p>
-        <address>50–52 Wharf Road, London N1&nbsp;7EU</address>
-        <a class="tel" href="tel:+442045991174">+44 20 4599 1174</a>
-      </div>
-      <div class="card office"><span class="tag">SE</span>
-        <h3>Sweden</h3><p class="entity">Glent Sweden AB</p>
-        <address>c/o Moore KLN AB, Lilla Bommen 3B, 411&nbsp;04 Göteborg</address>
-        <a class="tel" href="tel:+46844689688">+46 8 446 896 88</a>
-      </div>
-    </div>
   </div>
 </section>
 

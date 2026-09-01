@@ -87,6 +87,12 @@ four NQA marks are inline-SVG recreations — the badge images arrived as chat
 pastes that never reached disk. When the owner supplies the official files,
 swap them in; do not redraw or restyle the recreations.
 
+Photography is owner-supplied from their saved copy of the glent.com homepage
+(2026-09-01); optimised derivatives live in `public/assets/img/`. The homepage
+projects video is not in the repo — the page-save held only its CDN link, and
+the host is blocked from this environment — so ask for the video files before
+adding it.
+
 ## Release ledger
 
 | Version | Title | Description |
@@ -96,3 +102,4 @@ swap them in; do not redraw or restyle the recreations.
 | v1.2 | The demo moves into its own home | The pitch demo now lives in its own GitHub repository, wired for Cloudflare hosting so every change pushed to main goes straight to the live site. The pages themselves are untouched — this release is the ground under them. |
 | v1.3 | The safety credentials take their place | The new site now tells the health, safety, environment and quality story — the injury-free goal, the certified integrated management system and its intended outcomes, and the NQA marks for ISO 9001, 14001 and 45001 — set in the same clean style as the rest of the page. |
 | v1.4 | The demo drops the framed original | The pitch is now two tabs — the new site and the offer. The framed view of the current glent.com no longer ships with the demo; it stays in the project's history if it is ever wanted back. |
+| v1.5 | The real sites step into the picture | The demo now shows Glent's own photographs — the Frankfurt flagship from the air beside the headline, two live sites backing the project register, and a Glent crew at work alongside the safety story, which now closes the page. The homepage film waits on its file. |

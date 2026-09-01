@@ -334,7 +334,7 @@
     "No testimonials anywhere on the site despite seven named repeat clients.",
     "No careers path on the site despite About copy leaning on training, wellbeing and development — second audience unserved; a client question, not invented content.",
     "No named pre-construction / estimating contact for tender enquiries.",
-    "Logo now supplied; photography still is not — the demo stays typography-led. Ask for a photo pack if imagery is wanted.",
+    "Logo and homepage photography now supplied (2026-09-01). Still open: the homepage projects video — the owner's page-save carries only its CDN URL (host blocked from this environment); ask for the .mp4/.webm files to add it.",
     "NQA badge images arrived as chat pastes the tooling could not save to disk — the four marks on /#hseq are inline-SVG recreations. Ask for the official badge files and swap them in."
   ],
   "questions": [
@@ -346,10 +346,16 @@
     "Should a careers line be added, and where do applications go?",
     "Named contact for tender enquiries?"
   ],
-  "photos": [],
+  "photos": [
+    "assets/img/fra01.jpg — FRA01 Frankfurt aerial (owner-saved homepage, 2026-09-01), on the flagship card",
+    "assets/img/fr10x.jpg — FR10x Frankfurt concrete frame (owner-saved homepage, 2026-09-01), on the register",
+    "assets/img/eems02.jpg — EEMS02 Groningen winter groundworks (owner-saved homepage, 2026-09-01), on the register",
+    "assets/img/on-site.jpg — Glent operative over a sheet-piled dig (owner-saved homepage 'What we do' image, 2026-09-01), beside the HSEQ copy"
+  ],
   "owner_overrides": [
     "2026-08-28: all prices removed from /offer/ at the owner's instruction — the page sells the improvements only; commercials to be discussed off-page.",
     "2026-09-01: HSEQ content added to the new site at the owner's instruction — full Health & Safety page copy and four NQA certification badges supplied in chat, placement left to the builder.",
-    "2026-09-01: the current-site tab removed at the owner's instruction — /original/ deleted and the demo bar reduced to two tabs, the new site and the offer."
+    "2026-09-01: the current-site tab removed at the owner's instruction — /original/ deleted and the demo bar reduced to two tabs, the new site and the offer.",
+    "2026-09-01: photography added at the owner's instruction from their saved copy of the glent.com homepage — FRA01 on the flagship card, FR10x and EEMS02 on the register, the branded operative shot beside the HSEQ copy. The projects video could not be included: the save held only its CDN link."
   ]
 }
