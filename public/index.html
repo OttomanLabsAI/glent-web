@@ -167,13 +167,18 @@ section{padding:64px 20px}
   font-size:15px;color:var(--muted)}
 .clients-line strong{color:var(--ink)}
 
-/* team slider */
+/* team slider — arrow buttons page it on desktop, swipe on mobile */
+.team-wrap{position:relative}
 .team-track{display:grid;grid-auto-flow:column;grid-auto-columns:min(300px,80vw);gap:16px;
-  overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 4px 18px;
-  scrollbar-color:var(--accent) var(--band)}
-.team-track::-webkit-scrollbar{height:8px}
-.team-track::-webkit-scrollbar-track{background:var(--band);border-radius:4px}
-.team-track::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px}
+  overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 4px 10px;scrollbar-width:none}
+.team-track::-webkit-scrollbar{display:none}
+.tbtn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;
+  border-radius:50%;background:var(--deep);color:var(--ink);border:1px solid var(--line);
+  font:700 24px/1 var(--sans);cursor:pointer;padding:0}
+.tbtn:hover{color:var(--accent);border-color:var(--accent)}
+.tbtn.prev{left:-10px}
+.tbtn.next{right:-10px}
+@media (max-width:699px){.tbtn{display:none}}
 .profile{scroll-snap-align:start;background:var(--card);border:1px solid var(--line);
   border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
 .profile .ph{position:relative;background:var(--deep)}
@@ -470,7 +475,12 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
     <p class="kicker">The people</p>
     <h2>The team behind the packages</h2>
     <p style="color:var(--muted)">Slide through the group leads. The demo ships with placeholder portraits until the photo set arrives.</p>
-    <div class="team-track" aria-label="Team profiles — scroll sideways">
+    <div class="team-wrap">
+    <button class="tbtn prev" type="button" aria-label="Previous profiles"
+      onclick="document.getElementById('team-track').scrollBy({left:-632,behavior:'smooth'})">&#8249;</button>
+    <button class="tbtn next" type="button" aria-label="Next profiles"
+      onclick="document.getElementById('team-track').scrollBy({left:632,behavior:'smooth'})">&#8250;</button>
+    <div class="team-track" id="team-track" aria-label="Team profiles — swipe or use the arrows">
       <article class="profile">
         <div class="ph">
           <svg viewBox="0 0 300 225" role="img" aria-label="Placeholder portrait — Alan Ferguson">
@@ -547,6 +557,7 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
           </div>
         </div>
       </article>
+    </div>
     </div>
     <p class="team-note">Names and roles read from Glent's public profiles — to be confirmed with the client. Portraits, direct emails, dials and personal LinkedIn links to follow. <span class="chip">To confirm</span></p>
   </div>
