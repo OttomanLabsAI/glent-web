@@ -12,7 +12,6 @@ production**.
 ```
 public/            everything served
   index.html       the new one-page site
-  original/        their live site, framed (capture blocked — see README)
   offer/           the offer page
   fonts/           self-hosted Plus Jakarta Sans (@fontsource)
   404.html
@@ -36,9 +35,10 @@ npm run dev          # wrangler dev
 2. Serve `public/`, render it with headless Chromium, and inspect the
    screenshots: styles applied, fonts loaded, layout intact.
 3. This repo also carries the site-pitch layout gate — run
-   `verify-layout.js` (site-pitch skill) two-pass: `/,/offer/` with
-   `--fonts "Plus Jakarta Sans" --original-host glent.com`, then `/original/`
-   alone (its iframe to glent.com is the sanctioned frame fallback).
+   `verify-layout.js` (site-pitch skill) on `/,/offer/` with
+   `--fonts "Plus Jakarta Sans" --original-host glent.com`. Single pass:
+   since the current-site tab was removed (2026-09-01), nothing served may
+   reference glent.com.
 
 Never leave pushed work unverified or half-finished. Work in small, complete
 batches: implement, verify, commit, push.
@@ -95,3 +95,4 @@ swap them in; do not redraw or restyle the recreations.
 | v1.1 | Dressed in the real brand, priced in silence | The demo now wears Glent's actual identity — their petrol teal, their orange, their logo and typeface — and the offer page drops every number to sell the improvements alone. |
 | v1.2 | The demo moves into its own home | The pitch demo now lives in its own GitHub repository, wired for Cloudflare hosting so every change pushed to main goes straight to the live site. The pages themselves are untouched — this release is the ground under them. |
 | v1.3 | The safety credentials take their place | The new site now tells the health, safety, environment and quality story — the injury-free goal, the certified integrated management system and its intended outcomes, and the NQA marks for ISO 9001, 14001 and 45001 — set in the same clean style as the rest of the page. |
+| v1.4 | The demo drops the framed original | The pitch is now two tabs — the new site and the offer. The framed view of the current glent.com no longer ships with the demo; it stays in the project's history if it is ever wanted back. |

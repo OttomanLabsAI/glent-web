@@ -1,12 +1,14 @@
 # glent-web
 
-Site-pitch demo for **Glent Group** (glent.com) — a three-tab pitch wired by a demo bar:
+Site-pitch demo for **Glent Group** (glent.com) — a two-tab pitch wired by a demo bar:
 
 | Route | Page |
 |---|---|
 | `/` | The new one-page site — self-delivered CSA packages, Data Centres & Pharma, Europe |
-| `/original/` | Their live site shown in a frame (see note below) |
 | `/offer/` | The offer — tale of the tape, the improvements, terms (no prices, by instruction) |
+
+The current-site tab (`/original/`, their live site in a frame) was removed at
+the owner's instruction on 2026-09-01; it lives on in git history if wanted back.
 
 A Cloudflare Workers static-assets site: everything served lives in `public/`, no build step.
 
@@ -22,14 +24,9 @@ npm run check        # wrangler deploy --dry-run
 
 Connect the repo in the Cloudflare dashboard (Workers & Pages → Create → Import a repository). Every push to `main` then deploys to production. This is a pitch demo: `robots.txt` disallows all, every page carries `noindex,nofollow`, and `_headers` adds `X-Robots-Tag` — it must never reach a search index.
 
-## The `/original/` tab
-
-A clean local copy of glent.com could not be made from this build environment (the network proxy blocks the host — the capture script returns its block page). `/original/` is therefore the honest frame fallback: the **live** site in an iframe with the reason stated on the strip. If glent.com ever sends `X-Frame-Options`/`frame-ancestors` denying it, the strip's "open in its own tab" link is the remainder. Re-run the capture from an unrestricted environment to upgrade this tab to a true local copy.
-
 ## External resources
 
-- `public/original/index.html` frames `https://glent.com/` (by design, see above).
-- Everything else is local: fonts are self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers, no third-party requests on `/` or `/offer/`.
+None. Everything served is local: fonts are self-hosted in `public/fonts/` (Plus Jakarta Sans 400/600/700 from npm `@fontsource`), no CDN fonts, no trackers, no third-party requests on any route.
 
 ## Facts and integrity
 
