@@ -6,7 +6,7 @@ Site-pitch demo for **Glent Group** (glent.com) — a two-tab pitch wired by a d
 |---|---|
 | `/` | The new one-page site — self-delivered CSA packages, Data Centres & Pharma, Europe |
 | `/technology/` | Technology showcase — the DataCentreForge manhole-plan tool, embedded live full-screen |
-| `/offer/` | The offer — tale of the tape, the improvements, terms (no prices, by instruction) |
+| `/improvements/` | The improvements — tale of the tape and what changes (no prices, by instruction) |
 
 The current-site tab (`/original/`, their live site in a frame) was removed at
 the owner's instruction on 2026-09-01; it lives on in git history if wanted back.
@@ -39,7 +39,7 @@ Every fact on the new site traces to `work/brief.json` (source + date seen, all 
 - "Götenborg" on their contact page is corrected to **Göteborg** (postcode 411 04 is unambiguous) — flagged in the brief's conflicts.
 - Brand colours (`#0F3D4B` petrol, `#FE5000` orange) are sampled from the owner-supplied header screenshot and logo file; the logo lockup and favicon come from that file. The typeface is **Plus Jakarta Sans, identified by eye** from the screenshot — confirm and swap if their CSS says otherwise.
 - Photography is owner-supplied (2026-09-01, from a saved copy of glent.com's homepage): the FRA01 aerial on the flagship card, FR10x and EEMS02 on the project register, and the branded-PPE operative shot beside the HSEQ copy — optimised derivatives in `public/assets/img/`. Their homepage projects video was **not** in the page-save (browsers save only a link to it) and its CDN is blocked from this environment — supply the `.mp4`/`.webm` files themselves to add it.
-- `/offer/` carries **no prices** at the owner's instruction — it sells the improvements; commercials are discussed off-page.
+- `/improvements/` (named `/offer/` until 2026-09-01) carries **no prices** at the owner's instruction — it sells the improvements; commercials are discussed off-page.
 - The HSEQ section (`/#hseq`, added 2026-09-01) carries the owner-supplied copy of glent.com's Health & Safety page. The four NQA certification marks there are **inline-SVG recreations** of badge images pasted in chat — the pastes never reached the repo as files — so swap in the official artwork when it is supplied.
 
 - The team section's names and roles were researched from public profiles on 2026-09-01 (RocketReach/TheOrg, aggregating LinkedIn); only Alan Ferguson is multi-source confirmed — the section says so on-page. Portraits are placeholders; email buttons route to the enquiry form and phone buttons ring the London office until direct contacts and personal LinkedIn URLs are supplied.

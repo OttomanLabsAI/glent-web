@@ -12,7 +12,7 @@ production**.
 ```
 public/            everything served
   index.html       the new one-page site
-  offer/           the offer page
+  improvements/    the improvements page (the offer, renamed 2026-09-01)
   fonts/           self-hosted Plus Jakarta Sans (@fontsource)
   404.html
   _headers         security + caching headers
@@ -35,7 +35,7 @@ npm run dev          # wrangler dev
 2. Serve `public/`, render it with headless Chromium, and inspect the
    screenshots: styles applied, fonts loaded, layout intact.
 3. This repo also carries the site-pitch layout gate — run
-   `verify-layout.js` (site-pitch skill) on `/,/offer/` with
+   `verify-layout.js` (site-pitch skill) on `/,/improvements/` with
    `--fonts "Plus Jakarta Sans" --original-host glent.com`. Single pass:
    since the current-site tab was removed (2026-09-01), nothing served may
    reference glent.com.
@@ -79,7 +79,8 @@ Facts on the new site trace to `work/brief.json`; the TO CONFIRM chip on the
 Danish phone number is deliberate (glent.com lists a +44 number there) — do not
 remove it without the client's answer.
 
-The offer page carries no prices — removed at the owner's instruction on
+The improvements page (the offer, renamed at the owner's instruction
+2026-09-01) carries no prices — removed at the owner's instruction on
 2026-08-28. Do not reintroduce the fee sheet without being asked.
 
 The HSEQ section on the new site carries owner-supplied copy (2026-09-01). Its
@@ -131,3 +132,4 @@ it does.
 | v1.12 | The drawing board's address comes good | The technology embeds now point at the tool's real home, supplied by the owner, and the to-confirm flag on the address comes off. The board itself still waits on its framing allowance before it appears inside the page. |
 | v1.13 | Every project on the register opens up | Each line of the project register now opens on a click — the Frankfurt flagship with its full scope and photograph, two more sites with their pictures now living inside their own rows, and the rest holding a place for their sheets — so the register reads as evidence rather than a list. |
 | v1.14 | Thirteen project sheets land on the register | Thirteen of the fifteen projects now open onto their real sheets — values from €1.2m to €43m, the packages delivered and the story of each job, from the Frankfurt flagship to the Bristol Myers Squibb therapy centre. Two sheets remain to come. |
+| v1.15 | The offer becomes the improvements, said quicker | The second tab now calls itself what it is — the improvements — at an address to match, and its talking points are cut to the bone: the same comparisons and guarantees in half the words. |
