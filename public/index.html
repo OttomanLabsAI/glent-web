@@ -133,10 +133,6 @@ section{padding:64px 20px}
 /* photography */
 .spec .photo{margin:-26px -24px 20px;overflow:hidden;border-bottom:1px solid var(--line);border-radius:3px 3px 0 0}
 .spec .photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
-.shots{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));margin:28px 0 6px}
-.shots figure{margin:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--card)}
-.shots img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
-.shots figcaption{padding:10px 14px;font:700 10.5px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .hseq-cols{display:grid;gap:36px 44px;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));align-items:center}
 .hseq-cols img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--line)}
 
@@ -166,6 +162,21 @@ section{padding:64px 20px}
 .clients-line{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);
   font-size:15px;color:var(--muted)}
 .clients-line strong{color:var(--ink)}
+
+/* expandable register rows */
+.register summary{list-style:none;cursor:pointer}
+.register summary::-webkit-details-marker{display:none}
+.register summary .code::before{content:"+";display:inline-block;width:16px;color:var(--muted)}
+.register details[open] summary .code::before{content:"–";color:var(--accent)}
+.register summary:hover{background:rgba(255,255,255,.03)}
+.register details[open]{border-bottom:1px solid var(--line)}
+.row-detail{padding:10px 0 24px 16px;display:grid;gap:20px 32px;
+  grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));align-items:start}
+.row-detail img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--line)}
+.row-detail dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0;font-size:14.5px}
+.row-detail dt{font:700 10.5px/1.7 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.row-detail dd{margin:0}
+.row-detail .thin{color:var(--muted);font-size:14px;margin:0;align-self:center}
 
 /* live tool embed */
 .embed{margin-top:30px;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--deep)}
@@ -437,33 +448,87 @@ footer p{margin:0;font-size:13.5px;color:var(--muted)}
   <div class="wrap">
     <p class="kicker">Projects delivered</p>
     <h2>The project register</h2>
-    <div class="shots">
-      <figure>
-        <img src="/assets/img/fr10x.jpg" width="1400" height="933" loading="lazy" alt="FR10x, Frankfurt — reinforced concrete frame, cores and suspended slabs rising under tower cranes">
-        <figcaption>FR10X — Frankfurt · Germany</figcaption>
-      </figure>
-      <figure>
-        <img src="/assets/img/eems02.jpg" width="1400" height="933" loading="lazy" alt="EEMS02 — piling rigs and groundworks on the winter site among the Eemshaven wind turbines">
-        <figcaption>EEMS02 — Groningen · Netherlands</figcaption>
-      </figure>
-    </div>
     <div class="register">
       <div class="row head"><span>Project</span><span>For</span><span class="loc">Location</span></div>
-      <div class="row"><span class="code">FRA01</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
-      <div class="row"><span class="code">DUB 4 &amp; DUB 5</span><span class="client">Winthrop Technologies</span><span class="loc">Dublin · Ireland</span></div>
-      <div class="row"><span class="code">EEMS02</span><span class="client">Mercury Engineering</span><span class="loc">Groningen · Netherlands</span></div>
-      <div class="row"><span class="code">FR10x</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></div>
-      <div class="row"><span class="code">AMS01</span><span class="client">Mercury Engineering</span><span class="loc">Amsterdam · Netherlands</span></div>
-      <div class="row"><span class="code">LEIDEN EXTERNALS</span><span class="client">SISK</span><span class="loc">Leiden · Netherlands</span></div>
-      <div class="row"><span class="code">BMS CAR T CENTRE</span><span class="client">DPS Global</span><span class="loc">Leiden · Netherlands</span></div>
-      <div class="row"><span class="code">IRON MOUNTAIN FRA01</span><span class="client">Collen</span><span class="loc">Frankfurt · Germany</span></div>
-      <div class="row"><span class="code">VANTAGE BER11–14</span><span class="client">Mercury Engineering</span><span class="loc">Berlin · Germany</span></div>
-      <div class="row"><span class="code">GOOGLE GRQ3–4 ENABLING</span><span class="client">Yondr</span><span class="loc">Eemshaven · Netherlands</span></div>
-      <div class="row"><span class="code">GOOGLE GRQ3</span><span class="client">BAM</span><span class="loc">Eemshaven · Netherlands</span></div>
-      <div class="row"><span class="code">GOOGLE GRQ3 &amp; GRQ4</span><span class="client">Fluor</span><span class="loc">Eemshaven · Netherlands</span></div>
-      <div class="row"><span class="code">FACEBOOK ODN1 &amp; ODN2</span><span class="client">Blu-3</span><span class="loc">Odense · Denmark</span></div>
-      <div class="row"><span class="code">EDGECONNEX AMS06</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
-      <div class="row"><span class="code">EDGECONNEX AMS05</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></div>
+      <details open>
+        <summary class="row"><span class="code">FRA01</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></summary>
+        <div class="row-detail">
+          <dl>
+            <dt>Value</dt><dd>€43m — the largest package to date</dd>
+            <dt>Industry</dt><dd>Data Centre — 18,000&nbsp;m² building, three data centre modules plus front of house</dd>
+            <dt>Scope</dt><dd>Basement raft slab c.&thinsp;7&nbsp;m below ground, concrete frame for the entire structure, all underground services and hard landscaping across the 39,000&nbsp;m² site</dd>
+          </dl>
+          <img src="/assets/img/fra01.jpg" width="1400" height="933" loading="lazy" alt="Aerial view of the FRA01 site in Frankfurt — basement excavation and raft slab works under tower cranes">
+        </div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">DUB 4 &amp; DUB 5</span><span class="client">Winthrop Technologies</span><span class="loc">Dublin · Ireland</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">EEMS02</span><span class="client">Mercury Engineering</span><span class="loc">Groningen · Netherlands</span></summary>
+        <div class="row-detail">
+          <dl>
+            <dt>Pictured</dt><dd>Piling rigs and groundworks on the winter site, among the Eemshaven wind turbines</dd>
+            <dt>Sheet</dt><dd>Full project sheet to follow</dd>
+          </dl>
+          <img src="/assets/img/eems02.jpg" width="1400" height="933" loading="lazy" alt="EEMS02 — piling rigs and groundworks on the winter site among the Eemshaven wind turbines">
+        </div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">FR10x</span><span class="client">Winthrop Technologies</span><span class="loc">Frankfurt · Germany</span></summary>
+        <div class="row-detail">
+          <dl>
+            <dt>Pictured</dt><dd>The reinforced concrete frame rising — cores, columns and suspended slabs under tower cranes</dd>
+            <dt>Sheet</dt><dd>Full project sheet to follow</dd>
+          </dl>
+          <img src="/assets/img/fr10x.jpg" width="1400" height="933" loading="lazy" alt="FR10x, Frankfurt — reinforced concrete frame, cores and suspended slabs rising under tower cranes">
+        </div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">AMS01</span><span class="client">Mercury Engineering</span><span class="loc">Amsterdam · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">LEIDEN EXTERNALS</span><span class="client">SISK</span><span class="loc">Leiden · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">BMS CAR T CENTRE</span><span class="client">DPS Global</span><span class="loc">Leiden · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">IRON MOUNTAIN FRA01</span><span class="client">Collen</span><span class="loc">Frankfurt · Germany</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">VANTAGE BER11–14</span><span class="client">Mercury Engineering</span><span class="loc">Berlin · Germany</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">GOOGLE GRQ3–4 ENABLING</span><span class="client">Yondr</span><span class="loc">Eemshaven · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">GOOGLE GRQ3</span><span class="client">BAM</span><span class="loc">Eemshaven · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">GOOGLE GRQ3 &amp; GRQ4</span><span class="client">Fluor</span><span class="loc">Eemshaven · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">FACEBOOK ODN1 &amp; ODN2</span><span class="client">Blu-3</span><span class="loc">Odense · Denmark</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">EDGECONNEX AMS06</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
+      <details>
+        <summary class="row"><span class="code">EDGECONNEX AMS05</span><span class="client">Winthrop</span><span class="loc">Amsterdam · Netherlands</span></summary>
+        <div class="row-detail"><p class="thin">Full project sheet to follow — the code, client and location above are the confirmed record.</p></div>
+      </details>
     </div>
     <p class="clients-line">Client base includes <strong>Winthrop, Mercury, Yondr, Sisk, Collen, Fluor and NTT Global Data Centres</strong> — the majority of work won through repeat business.</p>
   </div>
